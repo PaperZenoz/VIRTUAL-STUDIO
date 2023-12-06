@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title>Моя страница </title>
     
-
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 <link rel="stylesheet" href="assets/css/style.css">
 
@@ -15,7 +15,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
 
@@ -218,29 +218,21 @@
                 </a>
             </div>
             
-
-
-
-
     <h1 class="h1">Моя страница</h1>
-
     
-
-
-    <div class="data">
+    <div class="data section section--no-top">
         <div class="data__wrap">
             <div class="data__photo img">
                 <img src="images/data/1.jpg" alt=""/>
             </div>
-
             <div class="data__general">
                 <div class="data__block">
-                    <h3 class="h3">
+                    <h4 class="h4">
                         Данные модели &nbsp;
                         <a href="#">
                             <img src="images/edit.svg" alt=""/>
                         </a>
-                    </h3>
+                    </h4>
                     <div class="data__list">
                         
 
@@ -284,12 +276,12 @@
 
 
                 <div class="data__block">
-                    <h3 class="h3">
+                    <h4 class="h4">
                         Контактная информация &nbsp;
                         <a href="#">
                             <img src="images/edit.svg" alt=""/>
                         </a>
-                    </h3>
+                    </h4>
                     <div class="data__list">
                         
 
@@ -324,6 +316,323 @@
         </div>
     </div>
 
+    
+    <div class="range section">
+        <div class="range__wrap">
+            <h2 class="h2">Ранг модели</h2>
+            <div class="range__list">
+
+
+                <div class="range__item">
+                    <div class="range__item-top">
+                        <div class="range__item-img done">
+                            <img src="images/range/1.png" alt=""/>
+                        </div>
+
+                        <div class="tooltip">
+                        </div>
+                    </div>
+
+                    <h4 class="h4">Котик</h4>
+
+                    <div class="progressbar">
+                        <div class="progressbar__from">
+                            0$
+                        </div>
+                        <div class="progressbar__to">
+                            600$
+                        </div>
+                        <div class="progressbar__total done">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="range__item process">
+                    <div class="range__item-top">
+                        <div class="range__item-img">
+                            <img src="images/range/2.png" alt=""/>
+                        </div>
+
+                        <div class="tooltip tooltip--white">
+                        </div>
+                    </div>
+
+                    <h4 class="h4">Студент</h4>
+
+                    <div class="progressbar">
+                        <div class="progressbar__from">
+                            600$
+                        </div>
+                        <div class="progressbar__to">
+                            1000$
+                        </div>
+                        <div class="progressbar__total progressbar__total--process">
+
+                        </div>
+
+                        <div class="progressbar__done">
+                            <span>855$</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="range__item">
+                    <div class="range__item-top">
+                        <div class="range__item-img">
+                            <img src="images/range/3.png" alt=""/>
+                        </div>
+
+                        <div class="tooltip">
+                        </div>
+                    </div>
+
+                    <h4 class="h4">Мастер</h4>
+
+                    <div class="progressbar">
+                        <div class="progressbar__from">
+                            1000$
+                        </div>
+                        <div class="progressbar__to">
+                            1500$
+                        </div>
+                        <div class="progressbar__total">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="range__item">
+                    <div class="range__item-top">
+                        <div class="range__item-img">
+                            <img src="images/range/4.png" alt=""/>
+                        </div>
+
+                        <div class="tooltip "></div>
+                    </div>
+
+                    <h4 class="h4">Легенда</h4>
+
+                    <div class="progressbar">
+                        <div class="progressbar__from">
+                            1500$
+                        </div>
+                        <div class="progressbar__to">
+                            2000$
+                        </div>
+                        <div class="progressbar__total">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="range__item">
+                    <div class="range__item-top">
+                        <div class="range__item-img">
+                            <img src="images/range/5.png" alt=""/>
+                        </div>
+
+                        <div class="tooltip">
+                        </div>
+                    </div>
+
+                    <h4 class="h4">Божество</h4>
+
+                    <div class="progressbar">
+                        <div class="progressbar__from">
+                            2000$
+                        </div>
+                        <div class="progressbar__to">
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.06003 8C2.99045 8 2.05184 7.64021 1.22237 6.9418C0.414734 6.22222 0 5.22751 0 3.95767C0 2.75132 0.414734 1.77778 1.2442 1.07936C2.0955 0.359788 3.03411 0 4.08186 0C5.60982 0 6.91951 0.740741 8.01091 2.22222C8.81855 1.01587 10.2156 0 11.9618 0C13.1187 0 14.0791 0.380952 14.8431 1.14286C15.6071 1.90476 16 2.83598 16 3.95767C16 5.14286 15.6071 6.1164 14.8431 6.87831C14.0791 7.61905 13.1187 8 11.9618 8C10.4775 8 9.01501 7.1746 7.98909 5.79894C6.87585 7.25926 5.56617 8 4.06003 8ZM4.32196 5.86243C5.21692 5.86243 6.04638 5.22751 6.81037 3.97884C5.95907 2.73016 5.1296 2.1164 4.30014 2.1164C3.1869 2.1164 2.44475 3.00529 2.44475 3.95767C2.44475 4.95238 3.1869 5.86243 4.32196 5.86243ZM11.7217 5.86243C12.8568 5.86243 13.5553 4.97354 13.5553 3.95767C13.5553 2.96296 12.8786 2.13757 11.678 2.13757C10.7831 2.13757 9.95361 2.75132 9.18963 3.97884C9.90996 5.22751 10.7394 5.86243 11.7217 5.86243Z"
+                                      fill="#8584AD"/>
+                            </svg>
+                        </div>
+                        <div class="progressbar__total">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="achievements">
+        <div class="achievements__wrap">
+            <div class="achievements__scores">
+                <h2 class="h2">Cashroom баллы</h2>
+
+                <div class="achievements__scores-card">
+                    <div class="achievements__scores-line">
+                        <div class="achievements__scores-bonus">
+                            <img src="images/bonus.svg" alt=""/>
+                            <span>88</span>
+                        </div>
+
+
+                        <div class="tooltip tooltip--white">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="achievements__rating">
+                <h2 class="h2">Ваше место в рейтинге</h2>
+                <div class="achievements__rating-card">
+                    <div class="achievements__rating-line">
+                        <div class="achievements__rating-place">
+                            <img src="images/cup.svg" alt=""/>
+                            <span>1 место</span>
+                        </div>
+                        <div class="tooltip">
+
+                        </div>
+                    </div>
+
+                    <div class="achievements__columns">
+                        <div class="achievements__column">
+                            <span>
+                                EvaRaay
+                            </span>
+
+                        </div>
+                        
+                            <div class="achievements__column">
+
+                            </div>
+                        
+                            <div class="achievements__column">
+
+                            </div>
+                        
+                            <div class="achievements__column">
+
+                            </div>
+                        
+                            <div class="achievements__column">
+
+                            </div>
+                        
+                            <div class="achievements__column">
+
+                            </div>
+                        
+                            <div class="achievements__column">
+
+                            </div>
+                        
+                            <div class="achievements__column">
+
+                            </div>
+                        
+                            <div class="achievements__column">
+
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    
+    <div class="news section">
+        <h2 class="h2">Новости CASHROOM Virtual</h2>
+        
+        <div class="news-slider slick-arrows-bg">
+            
+                <div class="news-slider__item img">
+                    <img src="images/news-slider/1.jpg" alt=""/>
+                    <div class="news-slider__content">
+                        <h3 class="h3">После просмотра видео остались вопросы?</h3>
+                        <span>Обратись за помощью к нашим специалистам!</span>
+                        <br> 
+                        <br>
+                        <a href="#" class="btn btn--dark-gray">Перейти</a>
+                    </div>
+                </div>
+            
+                <div class="news-slider__item img">
+                    <img src="images/news-slider/1.jpg" alt=""/>
+                    <div class="news-slider__content">
+                        <h3 class="h3">После просмотра видео остались вопросы?</h3>
+                        <span>Обратись за помощью к нашим специалистам!</span>
+                        <br> 
+                        <br>
+                        <a href="#" class="btn btn--dark-gray">Перейти</a>
+                    </div>
+                </div>
+            
+                <div class="news-slider__item img">
+                    <img src="images/news-slider/1.jpg" alt=""/>
+                    <div class="news-slider__content">
+                        <h3 class="h3">После просмотра видео остались вопросы?</h3>
+                        <span>Обратись за помощью к нашим специалистам!</span>
+                        <br> 
+                        <br>
+                        <a href="#" class="btn btn--dark-gray">Перейти</a>
+                    </div>
+                </div>
+            
+                <div class="news-slider__item img">
+                    <img src="images/news-slider/1.jpg" alt=""/>
+                    <div class="news-slider__content">
+                        <h3 class="h3">После просмотра видео остались вопросы?</h3>
+                        <span>Обратись за помощью к нашим специалистам!</span>
+                        <br> 
+                        <br>
+                        <a href="#" class="btn btn--dark-gray">Перейти</a>
+                    </div>
+                </div>
+            
+                <div class="news-slider__item img">
+                    <img src="images/news-slider/1.jpg" alt=""/>
+                    <div class="news-slider__content">
+                        <h3 class="h3">После просмотра видео остались вопросы?</h3>
+                        <span>Обратись за помощью к нашим специалистам!</span>
+                        <br> 
+                        <br>
+                        <a href="#" class="btn btn--dark-gray">Перейти</a>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+
+    
+    <div class="videos section">
+        <h2 class="h2">Первые шаги</h2>
+        <div class="videos__list">
+            <div class="videos__item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="videos__item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="videos__item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -335,9 +644,9 @@
 
 <!-- content -->
 
-<div id="preloader">
-    <div class="preloader"></div>
-</div>
+
+
+
 
 
 

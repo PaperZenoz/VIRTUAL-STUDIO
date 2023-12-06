@@ -1,0 +1,38 @@
+.progressbar
+  position: relative
+
+  &__total
+    width: 100%
+    height: 5px
+    @include r(10px)
+    background-color: $gray
+    &--process
+      opacity: 0.2
+
+    &.done
+      background-color: $violet
+
+  &__from, &__to
+    position: absolute
+    bottom: 0
+    transform: translateY(100%)
+    padding-top: 5px
+
+  &__to
+    right: 0
+
+  &__done
+    position: absolute
+    width: 50%
+    top: 0
+    height: 5px
+    @include r(10px)
+    background-color: white
+    span
+      position: absolute
+      right: 0
+      bottom: 0
+      padding-top: 5px
+      transform: translateY(100%)
+      @extend %700
+

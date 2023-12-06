@@ -3,3 +3,11 @@ $(window).on("load", function () {
     $('body').css("opacity", 1)
 
 });
+
+
+
+$(document).ready(function() {
+    $('.news-slider').slick({
+        arrows: true
+    })
+})

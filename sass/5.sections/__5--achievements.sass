@@ -1,0 +1,114 @@
+.achievements
+  &__wrap
+    display: grid
+    grid-template-columns: 480px auto
+    grid-gap: 30px
+
+  &__scores-card
+    height: 330px
+    @extend %radius
+    padding: 30px
+    background-image: url("../../images/achievements/1.png")
+    background-color: $violet
+
+  &__scores-line
+    @extend %fb
+    align-items: flex-start
+    color: $white
+
+  &__scores-bonus
+    @extend %fy
+
+    span
+      margin-left: 15px
+      @extend %700
+
+  &__rating-card
+    height: 330px
+    @extend %radius
+    padding: 30px
+    background-color: $white
+    flex-direction: column
+    justify-content: space-between
+    display: flex
+
+
+  &__rating-line
+    @extend %fb
+    align-items: flex-start
+
+  &__rating-place
+    @extend %fy
+
+    span
+      margin-left: 15px
+      @extend %700
+
+
+  &__columns
+    display: grid
+    grid-template-columns: repeat(9, 1fr)
+    grid-gap: 10px
+    align-items: flex-end
+
+  &__column
+    background-color: $gray
+    position: relative
+    @extend %radius
+    overflow: visible
+
+    &:nth-child(1)
+      height: 166px
+      background-color: rgba($violet, 1)
+
+    &:nth-child(2)
+      height: 151px
+      background-color: rgba($violet, 0.8)
+
+    &:nth-child(3)
+      height: 117px
+      background-color: rgba($violet, 0.6)
+
+    &:nth-child(4)
+      height: 100px
+
+    &:nth-child(5)
+      height: 90px
+
+    &:nth-child(6)
+      height: 80px
+
+    &:nth-child(7)
+      height: 70px
+
+    &:nth-child(8)
+      height: 60px
+
+    &:nth-child(9)
+      height: 50px
+
+    span
+      font-size: 14px
+      color: $white
+      padding: 10px 10px
+      @include r(10px)
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%, -125%)
+      background-color: $violet
+      margin-bottom: 5px
+
+      &:before
+        content: ''
+        width: 15px
+        height: 15px
+        display: block
+        background-color: $violet
+        transform: rotate(45deg) translate(-20%, 50%)
+        position: absolute
+        left: 50%
+        bottom: 0
+
+
+

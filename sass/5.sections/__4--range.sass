@@ -1,0 +1,41 @@
+.range
+  &__list
+    display: flex
+    gap: 30px
+
+  &__item
+    @extend %radius
+    background-color: $white
+    padding: 30px
+    height: 190px
+    width: 225px
+    flex-shrink: 0
+    &.process
+      width: 480px
+      background-image: url("../../images/range/bg.png")
+      background-color: $violet
+      color: $white
+
+  &__item-top
+    @extend %fb
+    margin-bottom: 20px
+
+
+  &__item-img
+    position: relative
+    &.done
+      &:before
+        content: ''
+        width: 12px
+        height: 12px
+        @include r(50%)
+        background-color: $violet
+        @extend %fc
+        background-image: url("data:image/svg+xml,%3Csvg width='7' height='7' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.84515 1.65765L2.65667 4.84613L0.999464 3.18804' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+        background-position: center
+        position: absolute
+        right: 0
+        top: 0
+        transform: translate(25%, -25%)
+        background-repeat: no-repeat
+        border: 2px solid $white
