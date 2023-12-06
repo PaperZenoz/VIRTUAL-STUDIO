@@ -3,6 +3,11 @@
     display: grid
     grid-template-columns: 480px auto
     grid-gap: 30px
+    @media screen and (max-width: 1919px)
+      grid-template-columns: 390px auto
+    @media screen and (max-width: 1439px)
+      grid-template-columns: 1fr
+
 
   &__scores-card
     height: 330px
@@ -10,6 +15,9 @@
     padding: 30px
     background-image: url("../../images/achievements/1.png")
     background-color: $violet
+    @media screen and (max-width: 1439px)
+      height: 75px
+      padding: 20px 15px
 
   &__scores-line
     @extend %fb
@@ -54,7 +62,7 @@
   &__column
     background-color: $gray
     position: relative
-    @extend %radius
+    @include r(10px)
     overflow: visible
 
     &:nth-child(1)
@@ -98,7 +106,6 @@
       transform: translate(-50%, -125%)
       background-color: $violet
       margin-bottom: 5px
-
       &:before
         content: ''
         width: 15px
@@ -109,6 +116,13 @@
         position: absolute
         left: 50%
         bottom: 0
+
+    @media screen and (max-width: 1439px)
+      span
+        transform: translate(-20%, -125%)
+        &:before
+          transform: rotate(45deg) translate(0%, 50%)
+          left: 15px
 
 
 

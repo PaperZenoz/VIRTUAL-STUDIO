@@ -12,7 +12,19 @@
 
 
 .page-container
-  margin: 0 auto
   width: 1920px
   display: grid
   grid-template-columns: 360px auto
+  margin: 0 auto
+  @media screen and (max-width: 1919px)
+    width: 1440px
+  @media screen and (max-width: 1439px)
+    grid-template-columns: 1fr
+    width: 375px
+
+
+
+
+
+
+

@@ -2,6 +2,11 @@
   &__list
     display: flex
     gap: 30px
+    @media screen and (max-width: 1439px)
+      display: block
+      gap: 0
+      width: 345px
+
 
   &__item
     @extend %radius
@@ -10,11 +15,17 @@
     height: 190px
     width: 225px
     flex-shrink: 0
+    @media screen and (max-width: 1919px)
+      width: 180px
+
+
     &.process
       width: 480px
       background-image: url("../../images/range/bg.png")
       background-color: $violet
       color: $white
+      @media screen and (max-width: 1919px)
+        width: 180px
 
   &__item-top
     @extend %fb
@@ -23,6 +34,7 @@
 
   &__item-img
     position: relative
+
     &.done
       &:before
         content: ''

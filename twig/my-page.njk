@@ -98,7 +98,7 @@
     <div class="{{ _ }} section">
         <div class="{{ _ }}__wrap">
             <h2 class="h2">Ранг модели</h2>
-            <div class="{{ _ }}__list">
+            <div class="{{ _ }}__list custom-slick-dots">
 
 
                 <div class="{{ _ }}__item">
@@ -306,15 +306,15 @@
     <div class="{{ _ }} section">
         <h2 class="h2">Новости CASHROOM Virtual</h2>
         {% set  _ = 'news-slider' %}
-        <div class="{{ _ }} slick-arrows-bg">
+        <div class="{{ _ }} slick-arrows-bg custom-slick-dots">
             {% for i in range(1, 5) %}
                 <div class="{{ _ }}__item img">
                     <img src="images/{{ _ }}/1.jpg" alt=""/>
+
                     <div class="{{ _ }}__content">
                         <h3 class="h3">После просмотра видео остались вопросы?</h3>
                         <span>Обратись за помощью к нашим специалистам!</span>
-                        <br> 
-                        <br>
+                        <div class="gap"></div>
                         <a href="#" class="btn btn--dark-gray">Перейти</a>
                     </div>
                 </div>
@@ -326,18 +326,120 @@
     {% set  _ = 'videos' %}
     <div class="{{ _ }} section">
         <h2 class="h2">Первые шаги</h2>
-        <div class="{{_}}__list">
-            <div class="{{_}}__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="{{ _ }}__list custom-slick-dots">
+            <div class="{{ _ }}__item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
             </div>
-            <div class="{{_}}__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="{{ _ }}__item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
             </div>
-            <div class="{{_}}__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="{{ _ }}__item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
             </div>
 
         </div>
+
+
+        <div class="{{ _ }}__cards">
+
+
+            <div class="{{ _ }}__card">
+                <div class="{{ _ }}__card-content">
+                    <h3 class="h3">Академия <br> CASHROOM</h3>
+                    <span>Первая в СНГ платформа для обучения вебкам моделей</span>
+                    <div class="gap"></div>
+                    <a href="#" class="btn btn--white">Перейти</a>
+                </div>
+
+
+                <picture>
+
+
+                    <source media="(max-width: 1439px)" srcset="images/{{ _ }}/12.png" />
+                    <source media="(max-width: 1919px)" srcset="images/{{ _ }}/11.png" />
+                    <img src="images/{{ _ }}/1.png" alt=""/>
+                </picture>
+
+
+            </div>
+
+            <div class="{{ _ }}__card">
+                <div class="{{ _ }}__card-content">
+                    <h3 class="h3">После просмотра видео остались вопросы?</h3>
+                    <span>Обратись за помощью к нашим специалистам!</span>
+                    <div class="gap"></div>
+                    <a href="#" class="btn btn--white">
+                        <img src="images/button-icon.svg" alt=""/>
+                        Нужна помощь
+                    </a>
+                </div>
+                <picture>
+
+                    <source media="(max-width: 1439px)" srcset="images/{{ _ }}/22.png" />
+                    <source media="(max-width: 1919px)" srcset="images/{{ _ }}/21.png" />
+
+                    <img src="images/{{ _ }}/2.png" alt=""/>
+                </picture>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    {% set  _ = 'ancors' %}
+
+    <div class="{{ _ }}">
+        <div class="{{_}}__wrap">
+            <div class="{{_}}__topline">
+            {% set  list = [
+                'Моя страница',
+                'Площадки',
+                'Документы',
+                'Академия',
+                'Инструменты',
+                'Статистика и выплаты']
+            %}
+                
+            {% for item in list %}
+                <a href="#">{{ item }}</a>
+            {% endfor %}
+            </div>
+            <div class="{{_}}__cards">
+                <div class="{{_}}__card">
+                    <span>Telegram</span>
+                    <strong>
+                        <img src="images/telegram.svg" alt=""/>
+                        @VirtualStudio
+                    </strong>
+                </div>
+                <div class="{{_}}__card">
+
+                    <span>Telegram канал</span>
+                    <strong>
+                        <img src="images/telegram.svg" alt=""/>
+                        @VirtualStudio
+                    </strong>
+                </div>
+                <div class="{{_}}__card">
+                    <span>E-Mail</span>
+                    <strong>VirtualStudio@gmail.com</strong>
+
+                </div>
+            
+            </div>
+        
+        </div>
+
     </div>
 
 

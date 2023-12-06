@@ -2,6 +2,14 @@
   background-color: $white
   padding: 30px
   font-size: 18px
+  position: sticky
+  top: 0
+  height: max-content
+  @media screen and (max-width: 1439px)
+  	display: none
+
+
+
 
   &__item
     display: flex
@@ -27,4 +35,5 @@
     flex-direction: column
     justify-content: space-between
     min-height: calc(100vh - 60px)
+
 

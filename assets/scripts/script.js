@@ -8,6 +8,34 @@ $(window).on("load", function () {
 
 $(document).ready(function() {
     $('.news-slider').slick({
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1440,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
     })
+
+
+
+
+
+
+    if ($(window).width() < 1440) {
+       $('.range__list').slick({
+           arrows: false,
+           dots: true
+       })
+    }
+
+    if ($(window).width() < 1440) {
+        $('.videos__list').slick({
+            arrows: false,
+            dots: true
+        })
+    }
 })

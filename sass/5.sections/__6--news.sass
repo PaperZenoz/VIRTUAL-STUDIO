@@ -1,18 +1,29 @@
 .news-slider
   width: 1500px
+  @media screen and (max-width: 1919px)
+    width: 1020px
+  @media screen and (max-width: 1439px)
+    width: 345px
+
+
   &__item
     @extend %radius
     color: $white
     position: relative
     min-height: 290px
-
     padding: 35px 45px
-
-
+    @media screen and (max-width: 1439px)
+      padding: 30px 15px
+      min-height: 430px
 
   &__content
     color: $white
     position: relative
     z-index: 1
     width: 350px
+    @media screen and (max-width: 1439px)
+      width: 100%
+    
+    	
+    
 
