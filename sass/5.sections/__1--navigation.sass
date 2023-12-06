@@ -1,0 +1,30 @@
+.navigation
+  background-color: $white
+  padding: 30px
+  font-size: 18px
+
+  &__item
+    display: flex
+    gap: 20px
+    height: 60px
+    @extend %fy
+    padding: 0 30px
+    @extend %radius
+    border-left: 1px solid transparent
+    @extend %transition
+
+    &.active, &:hover
+      background-color: $gray
+      border-left: 1px solid $violet
+
+  &__logo
+    margin-bottom: 60px
+    display: block
+
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: calc(100vh - 60px)
+
