@@ -1,0 +1,108 @@
+{% set page = { title: 'Моя страница ' } %}
+{% extends "./2.parts/main.njk" %}
+
+
+
+    {% set  active = 1 %}
+
+
+
+
+{% block content %}
+
+
+
+
+    <h1 class="h1">Моя страница</h1>
+
+    {% set  _ = 'data' %}
+
+
+    <div class="{{ _ }}">
+        <div class="{{ _ }}__wrap">
+            <div class="{{ _ }}__photo img">
+                <img src="images/{{ _ }}/1.jpg" alt=""/>
+            </div>
+
+            <div class="{{ _ }}__general">
+                <div class="{{ _ }}__block">
+                    <h3 class="h3">
+                        Данные модели &nbsp;
+                        <a href="#">
+                            <img src="images/edit.svg" alt=""/>
+                        </a>
+                    </h3>
+                    <div class="{{ _ }}__list">
+                        {% set  list = [{
+                            title: 'ФИО',
+                            subtitle: 'Бобровская Анастасия Сергеевна'
+                        },    {
+                            title: 'Ник модели',
+                            subtitle: 'EvaRaay'
+                        },   {
+                            title: 'Возраст',
+                        },   {
+                            title: 'Город',
+                            subtitle: 'Новосибирск'
+                        },   {
+                            title: 'Пол',
+                            subtitle: 'Женский'
+                        }] %}
+
+                        {% for item in list %}
+                            <div class="{{ _ }}__item">
+                                <span>{{ item.title }}</span>
+                                <strong>{{ item.subtitle }}</strong>
+                                {% if loop.index == 3 %}
+                                    <strong><a href="#" class="link">Добавить</a></strong>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+
+
+                <div class="{{ _ }}__block">
+                    <h3 class="h3">
+                        Контактная информация &nbsp;
+                        <a href="#">
+                            <img src="images/edit.svg" alt=""/>
+                        </a>
+                    </h3>
+                    <div class="{{ _ }}__list">
+                        {% set  list = [{
+                            title: 'Телефон',
+                            subtitle: '8 888 888 88 88'
+                        },    {
+                            title: 'E-mail',
+                            subtitle: 'evaraay@gmail.com'
+                        },   {
+                            title: 'Рабочий Instagram',
+                            subtitle: '@EvaRaay'
+                        },   {
+                            title: 'Telegram',
+                            subtitle: '@EvaRaay'
+                        }] %}
+
+                        {% for item in list %}
+                            <div class="{{ _ }}__item">
+                                <span>{{ item.title }}</span>
+                                <strong>{{ item.subtitle }}</strong>
+                            </div>
+                        {% endfor %}
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock content %}

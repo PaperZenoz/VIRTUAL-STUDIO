@@ -1,0 +1,39 @@
+{% set page = { title: 'Ссылки' } %}
+{% extends "./2.parts/main.njk" %}
+
+
+
+{% block content %}
+
+    <style>
+
+        .ancors .btn {
+            max-width: 100%;
+            width: 100%;
+            justify-content: flex-start;
+            color: white;
+            margin-bottom: 10px;
+            display: flex;
+            border-radius: 0;
+        }
+    </style>
+
+
+
+
+
+    {% set  list = [{
+        title: 'Моя страница',
+        subtitle: 'my-page'
+    }] %}
+
+    <div class="ancors section">
+        {% for item in list %}
+            <a href="{{ item.subtitle }}.html" class="btn btn--second btn--bg"
+               style="width: 100%">{{ item.title }}</a>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock content %}
