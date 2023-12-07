@@ -1,0 +1,30 @@
+.albums-photo
+  &__wrap
+    @extend %radius
+    padding: 35px 30px
+    background-color: $white
+
+  &__title
+    display: flex
+    align-items: flex-start
+
+    .h4
+      margin-right: 15px
+
+  &__list
+    margin-top: 50px
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    gap: 15px
+    @media screen and (max-width: 1439px)
+      grid-template-columns: repeat(3, 1fr)
+      gap: 10px
+    
+    	
+    
+
+  &__item
+    @extend %radius
+    height: 100px
+    @media screen and (max-width: 1439px)
+      height: 55px

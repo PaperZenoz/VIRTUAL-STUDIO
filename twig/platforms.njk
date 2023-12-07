@@ -1,0 +1,369 @@
+{% set page = { title: 'Площадки' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+    <h1 class="h1">Площадки</h1>
+
+    {% set  _ = 'platforms' %}
+
+    <div class="{{ _ }}">
+
+        <div class="{{ _ }}__general">
+
+
+            {% set  _ = 'fill-banner' %}
+            <div class="{{ _ }}">
+                <h3 class="h3">Заполните данные</h3>
+                <span>Начни зарабатывать уже сегодня</span>
+                <a href="#" class="btn btn--white">Заполнить</a>
+            </div>
+
+
+            {% set  _ = 'escort' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Сопровождение</h2>
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__img img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </div>
+                    <div class="{{ _ }}__content">
+                        <h4 class="h4">CASHROOM Virtual</h4>
+                        <p>предоставляет полное сопровождение по трем самым популярным площадкам. Для того, чтооб начать
+                            работу рекомендуем посмотреть видео и заполнить все необходимые разделы в личном
+                            кабинете. </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            {% set  _ = 'banner' %}
+            <div class="{{ _ }} section">
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__content">
+                        <h3 class="h3">После просмотра видео
+                            остались вопросы?</h3>
+                        <span>Обратись за помощью к нашим специалистам!</span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--white">
+                            <img src="images/button-icon.svg" alt=""/>
+                            Нужна помощь</a>
+                    </div>
+                    <div class="{{ _ }}__img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+
+            {% set  _ = 'partners' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Наши партнеры</h2>
+                <div class="{{ _ }}__wrap custom-slick-dots">
+                    {% set  list = [
+                        'Chaturbate',
+                        'Stripchat',
+                        'Skyprivat'] %}
+
+                    {% for item in list %}
+                        <a href="#" class="{{ _ }}__item">
+
+                            <div class="{{ _ }}__img img">
+                                <img src="images/{{ _ }}/{{ loop.index }}.png" alt=""/>
+                            </div>
+                            <h4 class="h4">{{ item }}</h4>
+
+                        </a>
+                    {% endfor %}
+
+
+                </div>
+
+            </div>
+
+
+            {% set  _ = 'information' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Ваша информация для площадок</h2>
+                <div class="{{ _ }}__wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M13.1495 3.62879C13.3013 3.24903 13.6691 3 14.0781 3H16.6763C17.34 3 17.8196 3.63482 17.6382 4.27332L14.7968 14.2733C14.6746 14.7033 14.2819 15 13.8349 15H10.0803C9.37287 15 8.88912 14.2856 9.15171 13.6288L13.1495 3.62879ZM4.54598 3.62879C4.6978 3.24903 5.06555 3 5.47453 3H8.07275C8.73652 3 9.2161 3.63482 9.03467 4.27332L6.19326 14.2733C6.07108 14.7033 5.67836 15 5.23134 15H1.47673C0.769347 15 0.285593 14.2856 0.548184 13.6288L4.54598 3.62879Z"
+                              fill="white"/>
+                    </svg>
+                    <br>
+                    <span>Прежде, чем заполнять информацию рекомендуем пройти обучение в академии CASHROOM</span>
+                </div>
+
+            </div>
+
+
+            {% set  _ = 'profile-photo' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Фото профиля</h2>
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__img img">
+                        <img src="images/{{ _ }}/1.jpg" alt=""/>
+                    </div>
+                    <div class="{{ _ }}__content">
+                        <div>
+                            <h4 class="h4">
+                                Загрузите Ваше главное фото профиля
+                            </h4>
+                            <p>Аватар (осноовное фото) представляет вас в качестве модели на площадках. Это изображения,
+                                которые вы и другие пользователи могут видеть на странице вашего профиля, в чате и т.
+                                д. </p>
+
+
+                        </div>
+
+                        <a href="#" class="btn">
+                            <img src="images/download.svg" alt=""/>
+                            Загрузить</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            {% set  _ = 'albums-photo' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Фото для альбомов </h2>
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__title">
+                        <h4 class="h4">Загрузите фото для альбомов</h4> <span>минимум 6шт</span>
+                    </div>
+                    <p>Фотографии будут использованы в Вашем модельном аккаунте. Рекомендуем использовать фото
+                        которые привлекут внимание зрителей. Более подробно Вы можете узнать в нашей академии. Чем
+                        лучше и интереснее фотографии, тем выше Ваш заработок!</p>
+                    <div class="gap"></div>
+                    <a href="#" class="btn"> <img src="images/download.svg" alt=""/>
+                        Загрузить</a>
+
+
+                    <div class="{{ _ }}__list">
+                        {% for i in range(1, 7) %}
+                            <div class="{{ _ }}__item img">
+                                <img src="images/{{ _ }}/1.jpg" alt=""/>
+                            </div>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            {% set  _ = 'platforms-form' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Описание на русском языке</h2>
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__two-columns {{ _ }}__header">
+                        <div class="{{ _ }}__column">
+                            <strong>Расскажите о своих интересах и хобби</strong>
+                            <p>Что Вы ожидаете от работы на площадке и какие мечты Вы хотите реализовать.</p>
+                        </div>
+
+                        <div class="{{ _ }}__column">
+                            <strong>Постарайтесь раскрыть Вашу личность.</strong>
+                            <p>Это нужно для того, чтоб пользователи видели не просто картинку, а настоящего, живого
+                                человека.</p>
+                        </div>
+                    </div>
+                    <textarea class="textarea" placeholder="Расскажите о себе. Не более 1200 символов."></textarea>
+                    <div class="gap"></div>
+                    <a href="#" class="btn btn--dark-violet">Сохранить</a>
+                </div>
+            </div>
+
+            <div class="{{ _ }} section">
+                <h2 class="h2">Описание на английском</h2>
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__header">
+                        <p>Если Вы не владеете английским языком, <br>
+                            то рекомендуем воспользоваться переводчиком от Яндекса</p>
+                    </div>
+
+                    <textarea class="textarea" placeholder="Расскажите о себе. Не более 1200 символов."></textarea>
+                    <div class="gap"></div>
+                    <a href="#" class="btn btn--dark-violet">Сохранить</a>
+                </div>
+            </div>
+
+
+            <div class="{{ _ }} section">
+                <h2 class="h2">Ваш никнейм</h2>
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__header">
+                        <p>Ник- это Ваш псевдоним на английском языке которые отражает Ваш характер, внешний вид или
+                            формат шоу. Все поользователи будут искать Вас и узнавать по Вашему никнейму.</p>
+                        <div class="gap"></div>
+                        <div style="display: flex; flex-wrap: wrap">
+                            <span>Примеры </span>
+                            <ul class="ul">
+                                <li>LilianSquirty</li>
+                                <li>ArielEnergy</li>
+                                <li>SunnyCaroline</li>
+                            </ul>
+                        </div>
+                        <div class="{{ _ }}__two-columns">
+                            <div class="{{ _ }}__column">
+                                <input type="text" class="input" placeholder="Первый вариант">
+                            </div>
+                            <div class="{{ _ }}__column">
+                                <input type="text" class="input" placeholder="Второй вариант">
+                            </div>
+
+                        </div>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--dark-violet">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="{{ _ }} section">
+                <h2 class="h2">Внешний вид модели</h2>
+                <div class="{{ _ }}__wrap">
+                    <div class="{{_}}__three-columns">
+                        <select id="selectElement" >
+                            <option data-placeholder="true">Телосложение</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                        <input type="text" class="input" placeholder="Цвет волос">
+                        <input type="text" class="input" placeholder="Рост">
+                        <input type="text" class="input" placeholder="Цвет глаз">
+                        <input type="text" class="input" placeholder="Грудь">
+                        <input type="text" class="input" placeholder="Вес">
+                    </div>
+                    <div class="gap"></div>
+                    <a href="#" class="btn btn--dark-violet">Сохранить</a>
+
+                </div>
+            </div>
+
+            <div class="{{ _ }} section">
+                <h2 class="h2">Ваши данные для входа</h2>
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__header">
+                        <h4 class="h4">Доступны после прохождения регистрации на площадках</h4>
+                    </div>
+
+                    <div class="{{ _ }}__two-columns">
+                        <div class="{{ _ }}__column">
+                            <strong>Chaturbate</strong>
+                            <input type="text" class="input" placeholder="Логин">
+
+                            <div class="password">
+                                <input type="password" class="input" placeholder="Пароль">
+                            </div>
+
+                        </div>
+                        <div class="{{ _ }}__column">
+                            <strong>Stripchat</strong>
+                            <input type="text" class="input" placeholder="Логин">
+                            <div class="password">
+                                <input type="password" class="input" placeholder="Пароль">
+                            </div>
+                        </div>
+
+                        <div class="{{ _ }}__column">
+                            <strong>Skyprivat</strong>
+                            <input type="text" class="input" placeholder="Логин">
+                            <div class="password">
+                                <input type="password" class="input" placeholder="Пароль">
+                            </div>
+                        </div>
+
+                        <div class="{{ _ }}__column">
+                            <div style="display: flex">
+                                <strong>Skyprivat &nbsp;</strong><span>(досутп к скайпу)</span>
+                            </div>
+
+                            <input type="text" class="input" placeholder="Логин">
+                            <div class="password">
+                                <input type="password" class="input" placeholder="Пароль">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="platforms__navigation">
+            <h4 class="h4">Навигация</h4>
+
+            {% set  list = [
+                'Сопровождение',
+                'Наши партнеры',
+                'Фото профиля',
+                'Фото для альбомов',
+                'Описание на русском языке',
+                'Описание на английском',
+                'Ваш никнейм',
+                'Внешний вид модели',
+                'Ваши данные для входа'] %}
+
+            <ul class="ul">
+                {% for item in list %}
+                    <li><a href="#">{{ item }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    {% set  _ = 'ancors' %}
+
+    <div class="{{ _ }} section section--no-bottom">
+        <div class="{{_}}__wrap">
+            <div class="{{_}}__topline">
+                {% set  list = [
+                    'Моя страница',
+                    'Площадки',
+                    'Документы',
+                    'Академия',
+                    'Инструменты',
+                    'Статистика и выплаты']
+                %}
+
+                {% for item in list %}
+                    <a href="#">{{ item }}</a>
+                {% endfor %}
+            </div>
+            <div class="{{_}}__cards">
+                <div class="{{_}}__card">
+                    <span>Telegram</span>
+                    <strong>
+                        <img src="images/telegram.svg" alt=""/>
+                        @VirtualStudio
+                    </strong>
+                </div>
+                <div class="{{_}}__card">
+
+                    <span>Telegram канал</span>
+                    <strong>
+                        <img src="images/telegram.svg" alt=""/>
+                        @VirtualStudio
+                    </strong>
+                </div>
+                <div class="{{_}}__card">
+                    <span>E-Mail</span>
+                    <strong>VirtualStudio@gmail.com</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock content %}

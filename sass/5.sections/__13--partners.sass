@@ -1,0 +1,23 @@
+.partners
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+    @media screen and (max-width: 1439px)
+      display: block
+      width: 345px
+
+
+  &__item
+    padding: 15px
+    background-color: $white
+    @extend %radius
+
+    .h4
+      margin-bottom: 0
+
+  &__img
+    height: 160px
+    @extend %radius
+    background-color: $gray
+    margin-bottom: 20px

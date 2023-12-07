@@ -5,37 +5,78 @@ $(window).on("load", function () {
 });
 
 
+$(document).ready(function () {
 
-$(document).ready(function() {
-    $('.news-slider').slick({
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 1440,
-                settings: {
-                    dots: true,
-                    arrows: false
+    function news_slider() {
+        $('.news-slider').slick({
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        dots: true,
+                        arrows: false
+                    }
                 }
-            }
-        ]
+            ]
+        })
+    }
+
+    function range_slider() {
+        if ($(window).width() < 1440) {
+            $('.range__list').slick({
+                arrows: false,
+                dots: true
+            })
+        } else {
+            $('.range__list').slick('unslick')
+        }
+    }
+
+    function videos_slider() {
+        if ($(window).width() < 1440) {
+            $('.videos__list').slick({
+                arrows: false,
+                dots: true
+            })
+        } else {
+            $('.videos__wrap').slick('unslick')
+        }
+    }
+
+    function partners_slider() {
+        if ($(window).width() < 1440) {
+            $('.partners__wrap').slick({
+                arrows: false,
+                dots: true
+            })
+        } else {
+            $('.partners__wrap').slick('unslick')
+        }
+    }
+
+    new SlimSelect({
+        select: '#selectElement',
+        settings: {
+            showSearch: false
+        }
+
     })
 
 
+    function sliders() {
+        news_slider()
+        range_slider()
+        videos_slider()
+        partners_slider()
 
-
-
-
-    if ($(window).width() < 1440) {
-       $('.range__list').slick({
-           arrows: false,
-           dots: true
-       })
     }
 
-    if ($(window).width() < 1440) {
-        $('.videos__list').slick({
-            arrows: false,
-            dots: true
-        })
-    }
+
+    sliders()
+
+    $(window).resize(function () {
+            sliders()
+    });
+
 })

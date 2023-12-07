@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>Площадки</title>
+    
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="assets/css/style.css">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+
+
+
+<script src="assets/scripts/script.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+<!-- content -->
+
+<div class="page-container">
+    
+    <div class="navigation">
+        <div class="navigation__wrap">
+            <div class="navigation__top">
+                <a href="index.html" class="navigation__logo">
+                    <img src="images/navigation/logo.svg" alt=""/>
+                </a>
+                <div class="navigation__list">
+                    
+
+
+                    
+                        <a href="#" class="navigation__item ">
+                            
+                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M4.49912 5C4.49912 3.80653 4.97323 2.66193 5.81714 1.81802C6.66105 0.974106 7.80565 0.5 8.99912 0.5C10.1926 0.5 11.3372 0.974106 12.1811 1.81802C13.025 2.66193 13.4991 3.80653 13.4991 5C13.4991 6.19347 13.025 7.33807 12.1811 8.18198C11.3372 9.02589 10.1926 9.5 8.99912 9.5C7.80565 9.5 6.66105 9.02589 5.81714 8.18198C4.97323 7.33807 4.49912 6.19347 4.49912 5ZM0.750119 19.105C0.78384 16.9395 1.66776 14.8741 3.21108 13.3546C4.7544 11.8351 6.83333 10.9834 8.99912 10.9834C11.1649 10.9834 13.2438 11.8351 14.7872 13.3546C16.3305 14.8741 17.2144 16.9395 17.2481 19.105C17.2507 19.2508 17.2108 19.3942 17.1332 19.5176C17.0555 19.641 16.9436 19.7392 16.8111 19.8C14.3603 20.9237 11.6953 21.5037 8.99912 21.5C6.21312 21.5 3.56612 20.892 1.18712 19.8C1.05461 19.7392 0.942695 19.641 0.865082 19.5176C0.787468 19.3942 0.747518 19.2508 0.750119 19.105Z"
+                                          fill="#8584AD"/>
+                                </svg>
+                            
+                            
+                            
+                            
+                            
+                            
+
+
+
+
+                            Моя страница
+
+                        </a>
+                    
+                        <a href="#" class="navigation__item ">
+                            
+                            
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="13.6758" width="9" height="9" rx="3" fill="#8584AD"/>
+                                    <rect x="2" y="2.67578" width="9" height="9" rx="3" fill="#8584AD"/>
+                                    <rect x="13" y="13.6758" width="9" height="9" rx="3" fill="#8584AD"/>
+                                    <rect x="13" y="2.67578" width="9" height="9" rx="3" fill="#8584AD"/>
+                                </svg>
+                            
+                            
+                            
+                            
+                            
+
+
+
+
+                            Площадки
+
+                        </a>
+                    
+                        <a href="#" class="navigation__item ">
+                            
+                            
+                            
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 3.94721C7.5 2.90045 8.34 2.05273 9.375 2.05273H9.75C10.7446 2.05273 11.6984 2.45193 12.4017 3.1625C13.1049 3.87306 13.5 4.8368 13.5 5.8417V7.73618C13.5 8.78294 14.34 9.63066 15.375 9.63066H17.25C18.2446 9.63066 19.1984 10.0298 19.9017 10.7404C20.6049 11.451 21 12.4147 21 13.4196V16.8297C21 17.8754 20.16 18.7242 19.125 18.7242H9.375C8.87772 18.7242 8.4008 18.5246 8.04917 18.1693C7.69754 17.814 7.5 17.3321 7.5 16.8297V3.94721Z"
+                                          fill="#8584AD"/>
+                                    <path d="M15 5.84175C15.0018 4.56719 14.5475 3.33494 13.721 2.37207C15.3943 2.81661 16.9207 3.70222 18.1441 4.93835C19.3675 6.17447 20.244 7.71674 20.684 9.40741C19.731 8.57231 18.5115 8.11336 17.25 8.11513H15.375C15.2755 8.11513 15.1802 8.07521 15.1098 8.00415C15.0395 7.93309 15 7.83672 15 7.73623V5.84175ZM4.875 6.59954H6V16.8297C6 17.7341 6.35558 18.6015 6.98851 19.241C7.62145 19.8805 8.47989 20.2398 9.375 20.2398H16.5V21.3765C16.5 22.4222 15.66 23.271 14.625 23.271H4.875C4.37772 23.271 3.90081 23.0714 3.54917 22.7161C3.19754 22.3608 3 21.8789 3 21.3765V8.49402C3 7.44726 3.84 6.59954 4.875 6.59954Z"
+                                          fill="#8584AD"/>
+                                </svg>
+                            
+                            
+                            
+                            
+
+
+
+
+                            Документы
+
+                        </a>
+                    
+                        <a href="#" class="navigation__item ">
+                            
+                            
+                            
+                            
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6999 2.83117C11.7946 2.78987 11.8967 2.76855 11.9999 2.76855C12.1032 2.76855 12.2053 2.78987 12.2999 2.83117C15.998 4.44757 19.5255 6.42906 22.8299 8.74617C22.9464 8.82784 23.0372 8.94093 23.0918 9.07227C23.1464 9.2036 23.1626 9.34775 23.1384 9.48791C23.1141 9.62807 23.0506 9.75845 22.9551 9.86385C22.8596 9.96925 22.736 10.0453 22.5989 10.0832C19.1683 11.0307 15.8488 12.3421 12.6969 13.9952L12.6939 13.9972L12.3539 14.1772C12.2452 14.2353 12.1238 14.2657 12.0004 14.2657C11.8771 14.2657 11.7557 14.2353 11.6469 14.1772C10.2956 13.455 8.91183 12.7953 7.49994 12.2002V11.9762C7.49994 11.8452 7.56694 11.7282 7.67194 11.6652C9.18131 10.7505 10.7341 9.90949 12.3249 9.14517C12.5042 9.05897 12.6419 8.90509 12.7078 8.71736C12.7736 8.52964 12.7621 8.32345 12.6759 8.14417C12.5897 7.96488 12.4359 7.82718 12.2481 7.76135C12.0604 7.69553 11.8542 7.70697 11.6749 7.79317C10.0407 8.57846 8.44552 9.44247 6.89494 10.3822C6.67434 10.516 6.48403 10.6943 6.33614 10.9057C6.18824 11.1171 6.08601 11.3571 6.03594 11.6102C4.51715 11.0258 2.97063 10.5162 1.40194 10.0832C1.26483 10.0453 1.14132 9.96925 1.04581 9.86385C0.9503 9.75845 0.886728 9.62807 0.862512 9.48791C0.838297 9.34775 0.854435 9.2036 0.909045 9.07227C0.963655 8.94093 1.05449 8.82784 1.17094 8.74617C4.47509 6.42913 8.00223 4.44765 11.6999 2.83117Z"
+                                          fill="#8584AD"/>
+                                    <path d="M13.0607 15.4998C15.517 14.1875 18.0818 13.0894 20.7267 12.2178C20.8607 13.6318 20.9467 15.0608 20.9817 16.5028C20.9854 16.6537 20.9435 16.8022 20.8614 16.9288C20.7793 17.0555 20.661 17.1545 20.5217 17.2128C17.687 18.3968 14.9729 19.8508 12.4167 21.5548C12.2935 21.6369 12.1488 21.6807 12.0007 21.6807C11.8527 21.6807 11.7079 21.6369 11.5847 21.5548C9.02895 19.8508 6.31511 18.3968 3.48074 17.2128C3.34134 17.1546 3.22275 17.0557 3.1405 16.9291C3.05824 16.8024 3.01615 16.6538 3.01974 16.5028C3.05474 15.0608 3.14074 13.6328 3.27474 12.2168C4.1931 12.5195 5.10217 12.8496 6.00074 13.2068V14.4768C5.78468 14.6013 5.60306 14.7777 5.47231 14.99C5.34156 15.2023 5.26581 15.4439 5.25191 15.6929C5.23801 15.9419 5.28641 16.1904 5.39271 16.416C5.49901 16.6415 5.65987 16.837 5.86074 16.9848C5.77074 17.3648 5.63874 17.7378 5.46374 18.0948C5.91574 18.3078 6.36474 18.5288 6.80974 18.7558C7.06064 18.2452 7.24579 17.7049 7.36074 17.1478C7.61363 17.0354 7.83048 16.8551 7.98729 16.6271C8.14411 16.3991 8.23478 16.1321 8.24927 15.8557C8.26376 15.5793 8.20151 15.3043 8.0694 15.0612C7.93729 14.818 7.74048 14.6161 7.50074 14.4778V13.8328C8.66887 14.3434 9.81642 14.8998 10.9407 15.5008C11.2669 15.675 11.631 15.7661 12.0007 15.7661C12.3705 15.7661 12.7346 15.675 13.0607 15.5008V15.4998Z"
+                                          fill="#8584AD"/>
+                                    <path d="M4.46036 19.4887C4.88036 19.0697 5.21336 18.5987 5.46036 18.0947C5.91336 18.3077 6.36236 18.5287 6.80736 18.7557C6.48015 19.4203 6.04566 20.0264 5.52136 20.5497C5.4527 20.6234 5.3699 20.6825 5.2779 20.7235C5.1859 20.7645 5.08659 20.7865 4.98589 20.7883C4.88518 20.7901 4.78515 20.7716 4.69177 20.7338C4.59838 20.6961 4.51354 20.64 4.44233 20.5688C4.37111 20.4975 4.31496 20.4127 4.27724 20.3193C4.23952 20.2259 4.221 20.1259 4.22277 20.0252C4.22455 19.9245 4.24659 19.8252 4.28758 19.7332C4.32858 19.6412 4.38768 19.5584 4.46136 19.4897L4.46036 19.4887Z"
+                                          fill="#8584AD"/>
+                                </svg>
+                            
+                            
+                            
+
+
+
+
+                            Академия
+
+                        </a>
+                    
+                        <a href="#" class="navigation__item ">
+                            
+                            
+                            
+                            
+                            
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M11.828 2.95117C10.912 2.95117 10.129 3.61417 9.978 4.51817L9.887 5.06717C9.86178 5.20498 9.80072 5.33372 9.70997 5.44045C9.61921 5.54717 9.50196 5.62813 9.37 5.67517C9.20842 5.73562 9.04899 5.80166 8.892 5.87317C8.76539 5.93336 8.62516 5.95914 8.48542 5.9479C8.34568 5.93667 8.21137 5.88882 8.096 5.80917L7.643 5.48517C7.28179 5.22711 6.84074 5.10557 6.39833 5.1422C5.95592 5.17882 5.54086 5.37123 5.227 5.68517L4.984 5.92817C4.67005 6.24203 4.47765 6.65709 4.44103 7.0995C4.4044 7.54191 4.52594 7.98296 4.784 8.34417L5.108 8.79717C5.18765 8.91254 5.2355 9.04685 5.24673 9.18659C5.25797 9.32633 5.23219 9.46656 5.172 9.59317C5.10048 9.75016 5.03444 9.90959 4.974 10.0712C4.92696 10.2031 4.846 10.3204 4.73927 10.4111C4.63255 10.5019 4.50381 10.563 4.366 10.5882L3.816 10.6802C3.37842 10.7533 2.98094 10.9792 2.69421 11.3177C2.40748 11.6563 2.25009 12.0855 2.25 12.5292V12.8732C2.25 13.7892 2.913 14.5722 3.817 14.7232L4.366 14.8142C4.647 14.8612 4.874 15.0642 4.974 15.3312C5.034 15.4932 5.101 15.6522 5.172 15.8092C5.23219 15.9358 5.25797 16.076 5.24673 16.2158C5.2355 16.3555 5.18765 16.4898 5.108 16.6052L4.784 17.0582C4.52594 17.4194 4.4044 17.8604 4.44103 18.3028C4.47765 18.7453 4.67005 19.1603 4.984 19.4742L5.227 19.7172C5.875 20.3652 6.897 20.4502 7.643 19.9172L8.096 19.5932C8.21137 19.5135 8.34568 19.4657 8.48542 19.4544C8.62516 19.4432 8.76539 19.469 8.892 19.5292C9.049 19.6002 9.208 19.6662 9.37 19.7272C9.637 19.8272 9.84 20.0542 9.887 20.3352L9.979 20.8852C10.129 21.7882 10.911 22.4512 11.828 22.4512H12.172C13.088 22.4512 13.871 21.7882 14.022 20.8842L14.113 20.3352C14.1382 20.1974 14.1993 20.0686 14.29 19.9619C14.3808 19.8552 14.498 19.7742 14.63 19.7272C14.7916 19.6667 14.951 19.6006 15.108 19.5292C15.2346 19.469 15.3748 19.4432 15.5146 19.4544C15.6543 19.4657 15.7886 19.5135 15.904 19.5932L16.357 19.9172C16.7182 20.1752 17.1593 20.2968 17.6017 20.2601C18.0441 20.2235 18.4591 20.0311 18.773 19.7172L19.016 19.4742C19.664 18.8262 19.749 17.8042 19.216 17.0582L18.892 16.6052C18.8124 16.4898 18.7645 16.3555 18.7533 16.2158C18.742 16.076 18.7678 15.9358 18.828 15.8092C18.899 15.6522 18.965 15.4932 19.026 15.3312C19.126 15.0642 19.353 14.8612 19.634 14.8142L20.184 14.7232C20.6218 14.65 21.0194 14.424 21.3061 14.0852C21.5929 13.7465 21.7502 13.317 21.75 12.8732V12.5292C21.75 11.6132 21.087 10.8302 20.183 10.6792L19.634 10.5882C19.4962 10.563 19.3675 10.5019 19.2607 10.4111C19.154 10.3204 19.073 10.2031 19.026 10.0712C18.9655 9.90961 18.8995 9.75018 18.828 9.59317C18.7678 9.46656 18.742 9.32633 18.7533 9.18659C18.7645 9.04685 18.8124 8.91254 18.892 8.79717L19.216 8.34417C19.4741 7.98296 19.5956 7.54191 19.559 7.0995C19.5224 6.65709 19.3299 6.24203 19.016 5.92817L18.773 5.68517C18.4591 5.37123 18.0441 5.17882 17.6017 5.1422C17.1593 5.10557 16.7182 5.22711 16.357 5.48517L15.904 5.80917C15.7886 5.88882 15.6543 5.93667 15.5146 5.9479C15.3748 5.95914 15.2346 5.93336 15.108 5.87317C14.951 5.80167 14.7916 5.73563 14.63 5.67517C14.498 5.62813 14.3808 5.54717 14.29 5.44045C14.1993 5.33372 14.1382 5.20498 14.113 5.06717L14.022 4.51717C13.9489 4.07942 13.7228 3.68181 13.3841 3.39506C13.0453 3.10831 12.6158 2.95102 12.172 2.95117H11.828ZM12 16.4512C12.9946 16.4512 13.9484 16.0561 14.6517 15.3528C15.3549 14.6496 15.75 13.6957 15.75 12.7012C15.75 11.7066 15.3549 10.7528 14.6517 10.0495C13.9484 9.34626 12.9946 8.95117 12 8.95117C11.0054 8.95117 10.0516 9.34626 9.34835 10.0495C8.64509 10.7528 8.25 11.7066 8.25 12.7012C8.25 13.6957 8.64509 14.6496 9.34835 15.3528C10.0516 16.0561 11.0054 16.4512 12 16.4512Z"
+                                          fill="#8584AD"/>
+                                </svg>
+                            
+                            
+
+
+
+
+                            Инструменты
+
+                        </a>
+                    
+                        <a href="#" class="navigation__item ">
+                            
+                            
+                            
+                            
+                            
+                            
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M2.25 13.877C2.25 11.6889 3.11919 9.5905 4.66637 8.04332C6.21354 6.49615 8.31196 5.62695 10.5 5.62695C10.6989 5.62695 10.8897 5.70597 11.0303 5.84662C11.171 5.98728 11.25 6.17804 11.25 6.37695V13.127H18C18.1989 13.127 18.3897 13.206 18.5303 13.3466C18.671 13.4873 18.75 13.678 18.75 13.877C18.75 16.065 17.8808 18.1634 16.3336 19.7106C14.7865 21.2578 12.688 22.127 10.5 22.127C8.31196 22.127 6.21354 21.2578 4.66637 19.7106C3.11919 18.1634 2.25 16.065 2.25 13.877Z"
+                                          fill="#8584AD"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M12.75 3.37695C12.75 3.17804 12.829 2.98728 12.9697 2.84662C13.1103 2.70597 13.3011 2.62695 13.5 2.62695C15.688 2.62695 17.7865 3.49615 19.3336 5.04332C20.8808 6.5905 21.75 8.68892 21.75 10.877C21.75 11.0759 21.671 11.2666 21.5303 11.4073C21.3897 11.5479 21.1989 11.627 21 11.627H13.5C13.3011 11.627 13.1103 11.5479 12.9697 11.4073C12.829 11.2666 12.75 11.0759 12.75 10.877V3.37695Z"
+                                          fill="#8584AD"/>
+                                </svg>
+                            
+
+
+
+
+                            Статистика и оплата
+
+                        </a>
+                    
+                </div>
+            </div>
+            <div class="navigation__bottom">
+                <a href="#" class="btn btn--gray">
+
+                    <img src="images/button-icon.svg" alt=""/>
+                    Нужна помощь
+
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    
+    <div class="general-field">
+        <div class="general-field__wrap">
+            <div class="general-field__topline">
+                <a href="#" class="general-field__topline-item">
+                    <img src="images/bell.svg" alt=""/>
+                </a>
+                <a href="#" class="general-field__topline-item">
+                    <img src="images/exit.svg" alt=""/>
+                    выйти
+                </a>
+            </div>
+            
+    <h1 class="h1">Площадки</h1>
+
+    
+
+    <div class="platforms">
+
+        <div class="platforms__general">
+
+
+            
+            <div class="fill-banner">
+                <h3 class="h3">Заполните данные</h3>
+                <span>Начни зарабатывать уже сегодня</span>
+                <a href="#" class="btn btn--white">Заполнить</a>
+            </div>
+
+
+            
+            <div class="escort section">
+                <h2 class="h2">Сопровождение</h2>
+                <div class="escort__wrap">
+                    <div class="escort__img img">
+                        <img src="images/escort/1.png" alt=""/>
+                    </div>
+                    <div class="escort__content">
+                        <h4 class="h4">CASHROOM Virtual</h4>
+                        <p>предоставляет полное сопровождение по трем самым популярным площадкам. Для того, чтооб начать
+                            работу рекомендуем посмотреть видео и заполнить все необходимые разделы в личном
+                            кабинете. </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+            <div class="banner section">
+                <div class="banner__wrap">
+                    <div class="banner__content">
+                        <h3 class="h3">После просмотра видео
+                            остались вопросы?</h3>
+                        <span>Обратись за помощью к нашим специалистам!</span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--white">
+                            <img src="images/button-icon.svg" alt=""/>
+                            Нужна помощь</a>
+                    </div>
+                    <div class="banner__img">
+                        <img src="images/banner/1.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="partners section">
+                <h2 class="h2">Наши партнеры</h2>
+                <div class="partners__wrap custom-slick-dots">
+                    
+
+                    
+                        <a href="#" class="partners__item">
+
+                            <div class="partners__img img">
+                                <img src="images/partners/1.png" alt=""/>
+                            </div>
+                            <h4 class="h4">Chaturbate</h4>
+
+                        </a>
+                    
+                        <a href="#" class="partners__item">
+
+                            <div class="partners__img img">
+                                <img src="images/partners/2.png" alt=""/>
+                            </div>
+                            <h4 class="h4">Stripchat</h4>
+
+                        </a>
+                    
+                        <a href="#" class="partners__item">
+
+                            <div class="partners__img img">
+                                <img src="images/partners/3.png" alt=""/>
+                            </div>
+                            <h4 class="h4">Skyprivat</h4>
+
+                        </a>
+                    
+
+
+                </div>
+
+            </div>
+
+
+            
+            <div class="information section">
+                <h2 class="h2">Ваша информация для площадок</h2>
+                <div class="information__wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M13.1495 3.62879C13.3013 3.24903 13.6691 3 14.0781 3H16.6763C17.34 3 17.8196 3.63482 17.6382 4.27332L14.7968 14.2733C14.6746 14.7033 14.2819 15 13.8349 15H10.0803C9.37287 15 8.88912 14.2856 9.15171 13.6288L13.1495 3.62879ZM4.54598 3.62879C4.6978 3.24903 5.06555 3 5.47453 3H8.07275C8.73652 3 9.2161 3.63482 9.03467 4.27332L6.19326 14.2733C6.07108 14.7033 5.67836 15 5.23134 15H1.47673C0.769347 15 0.285593 14.2856 0.548184 13.6288L4.54598 3.62879Z"
+                              fill="white"/>
+                    </svg>
+                    <br>
+                    <span>Прежде, чем заполнять информацию рекомендуем пройти обучение в академии CASHROOM</span>
+                </div>
+
+            </div>
+
+
+            
+            <div class="profile-photo section">
+                <h2 class="h2">Фото профиля</h2>
+                <div class="profile-photo__wrap">
+                    <div class="profile-photo__img img">
+                        <img src="images/profile-photo/1.jpg" alt=""/>
+                    </div>
+                    <div class="profile-photo__content">
+                        <div>
+                            <h4 class="h4">
+                                Загрузите Ваше главное фото профиля
+                            </h4>
+                            <p>Аватар (осноовное фото) представляет вас в качестве модели на площадках. Это изображения,
+                                которые вы и другие пользователи могут видеть на странице вашего профиля, в чате и т.
+                                д. </p>
+
+
+                        </div>
+
+                        <a href="#" class="btn">
+                            <img src="images/download.svg" alt=""/>
+                            Загрузить</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            
+            <div class="albums-photo section">
+                <h2 class="h2">Фото для альбомов </h2>
+                <div class="albums-photo__wrap">
+                    <div class="albums-photo__title">
+                        <h4 class="h4">Загрузите фото для альбомов</h4> <span>минимум 6шт</span>
+                    </div>
+                    <p>Фотографии будут использованы в Вашем модельном аккаунте. Рекомендуем использовать фото
+                        которые привлекут внимание зрителей. Более подробно Вы можете узнать в нашей академии. Чем
+                        лучше и интереснее фотографии, тем выше Ваш заработок!</p>
+                    <div class="gap"></div>
+                    <a href="#" class="btn"> <img src="images/download.svg" alt=""/>
+                        Загрузить</a>
+
+
+                    <div class="albums-photo__list">
+                        
+                            <div class="albums-photo__item img">
+                                <img src="images/albums-photo/1.jpg" alt=""/>
+                            </div>
+                        
+                            <div class="albums-photo__item img">
+                                <img src="images/albums-photo/1.jpg" alt=""/>
+                            </div>
+                        
+                            <div class="albums-photo__item img">
+                                <img src="images/albums-photo/1.jpg" alt=""/>
+                            </div>
+                        
+                            <div class="albums-photo__item img">
+                                <img src="images/albums-photo/1.jpg" alt=""/>
+                            </div>
+                        
+                            <div class="albums-photo__item img">
+                                <img src="images/albums-photo/1.jpg" alt=""/>
+                            </div>
+                        
+                            <div class="albums-photo__item img">
+                                <img src="images/albums-photo/1.jpg" alt=""/>
+                            </div>
+                        
+                            <div class="albums-photo__item img">
+                                <img src="images/albums-photo/1.jpg" alt=""/>
+                            </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="platforms-form section">
+                <h2 class="h2">Описание на русском языке</h2>
+                <div class="platforms-form__wrap">
+                    <div class="platforms-form__two-columns platforms-form__header">
+                        <div class="platforms-form__column">
+                            <strong>Расскажите о своих интересах и хобби</strong>
+                            <p>Что Вы ожидаете от работы на площадке и какие мечты Вы хотите реализовать.</p>
+                        </div>
+
+                        <div class="platforms-form__column">
+                            <strong>Постарайтесь раскрыть Вашу личность.</strong>
+                            <p>Это нужно для того, чтоб пользователи видели не просто картинку, а настоящего, живого
+                                человека.</p>
+                        </div>
+                    </div>
+                    <textarea class="textarea" placeholder="Расскажите о себе. Не более 1200 символов."></textarea>
+                    <div class="gap"></div>
+                    <a href="#" class="btn btn--dark-violet">Сохранить</a>
+                </div>
+            </div>
+
+            <div class="platforms-form section">
+                <h2 class="h2">Описание на английском</h2>
+                <div class="platforms-form__wrap">
+                    <div class="platforms-form__header">
+                        <p>Если Вы не владеете английским языком, <br>
+                            то рекомендуем воспользоваться переводчиком от Яндекса</p>
+                    </div>
+
+                    <textarea class="textarea" placeholder="Расскажите о себе. Не более 1200 символов."></textarea>
+                    <div class="gap"></div>
+                    <a href="#" class="btn btn--dark-violet">Сохранить</a>
+                </div>
+            </div>
+
+
+            <div class="platforms-form section">
+                <h2 class="h2">Ваш никнейм</h2>
+                <div class="platforms-form__wrap">
+                    <div class="platforms-form__header">
+                        <p>Ник- это Ваш псевдоним на английском языке которые отражает Ваш характер, внешний вид или
+                            формат шоу. Все поользователи будут искать Вас и узнавать по Вашему никнейму.</p>
+                        <div class="gap"></div>
+                        <div style="display: flex; flex-wrap: wrap">
+                            <span>Примеры </span>
+                            <ul class="ul">
+                                <li>LilianSquirty</li>
+                                <li>ArielEnergy</li>
+                                <li>SunnyCaroline</li>
+                            </ul>
+                        </div>
+                        <div class="platforms-form__two-columns">
+                            <div class="platforms-form__column">
+                                <input type="text" class="input" placeholder="Первый вариант">
+                            </div>
+                            <div class="platforms-form__column">
+                                <input type="text" class="input" placeholder="Второй вариант">
+                            </div>
+
+                        </div>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--dark-violet">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="platforms-form section">
+                <h2 class="h2">Внешний вид модели</h2>
+                <div class="platforms-form__wrap">
+                    <div class="platforms-form__three-columns">
+                        <select id="selectElement" >
+                            <option data-placeholder="true">Телосложение</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                        <input type="text" class="input" placeholder="Цвет волос">
+                        <input type="text" class="input" placeholder="Рост">
+                        <input type="text" class="input" placeholder="Цвет глаз">
+                        <input type="text" class="input" placeholder="Грудь">
+                        <input type="text" class="input" placeholder="Вес">
+                    </div>
+                    <div class="gap"></div>
+                    <a href="#" class="btn btn--dark-violet">Сохранить</a>
+
+                </div>
+            </div>
+
+            <div class="platforms-form section">
+                <h2 class="h2">Ваши данные для входа</h2>
+                <div class="platforms-form__wrap">
+                    <div class="platforms-form__header">
+                        <h4 class="h4">Доступны после прохождения регистрации на площадках</h4>
+                    </div>
+
+                    <div class="platforms-form__two-columns">
+                        <div class="platforms-form__column">
+                            <strong>Chaturbate</strong>
+                            <input type="text" class="input" placeholder="Логин">
+
+                            <div class="password">
+                                <input type="password" class="input" placeholder="Пароль">
+                            </div>
+
+                        </div>
+                        <div class="platforms-form__column">
+                            <strong>Stripchat</strong>
+                            <input type="text" class="input" placeholder="Логин">
+                            <div class="password">
+                                <input type="password" class="input" placeholder="Пароль">
+                            </div>
+                        </div>
+
+                        <div class="platforms-form__column">
+                            <strong>Skyprivat</strong>
+                            <input type="text" class="input" placeholder="Логин">
+                            <div class="password">
+                                <input type="password" class="input" placeholder="Пароль">
+                            </div>
+                        </div>
+
+                        <div class="platforms-form__column">
+                            <div style="display: flex">
+                                <strong>Skyprivat &nbsp;</strong><span>(досутп к скайпу)</span>
+                            </div>
+
+                            <input type="text" class="input" placeholder="Логин">
+                            <div class="password">
+                                <input type="password" class="input" placeholder="Пароль">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="platforms__navigation">
+            <h4 class="h4">Навигация</h4>
+
+            
+
+            <ul class="ul">
+                
+                    <li><a href="#">Сопровождение</a></li>
+                
+                    <li><a href="#">Наши партнеры</a></li>
+                
+                    <li><a href="#">Фото профиля</a></li>
+                
+                    <li><a href="#">Фото для альбомов</a></li>
+                
+                    <li><a href="#">Описание на русском языке</a></li>
+                
+                    <li><a href="#">Описание на английском</a></li>
+                
+                    <li><a href="#">Ваш никнейм</a></li>
+                
+                    <li><a href="#">Внешний вид модели</a></li>
+                
+                    <li><a href="#">Ваши данные для входа</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <div class="ancors section section--no-bottom">
+        <div class="ancors__wrap">
+            <div class="ancors__topline">
+                
+
+                
+                    <a href="#">Моя страница</a>
+                
+                    <a href="#">Площадки</a>
+                
+                    <a href="#">Документы</a>
+                
+                    <a href="#">Академия</a>
+                
+                    <a href="#">Инструменты</a>
+                
+                    <a href="#">Статистика и выплаты</a>
+                
+            </div>
+            <div class="ancors__cards">
+                <div class="ancors__card">
+                    <span>Telegram</span>
+                    <strong>
+                        <img src="images/telegram.svg" alt=""/>
+                        @VirtualStudio
+                    </strong>
+                </div>
+                <div class="ancors__card">
+
+                    <span>Telegram канал</span>
+                    <strong>
+                        <img src="images/telegram.svg" alt=""/>
+                        @VirtualStudio
+                    </strong>
+                </div>
+                <div class="ancors__card">
+                    <span>E-Mail</span>
+                    <strong>VirtualStudio@gmail.com</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- content -->
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
