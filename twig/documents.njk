@@ -1,6 +1,193 @@
-{% set page = { title: 'Площадки' } %}
+{% set page = { title: 'Документы' } %}
 {% extends "./2.parts/main.njk" %}
+   {% set  active = 3 %}
 {% block content %}
     <h1 class="h1">Документы</h1>
+
+
+    {% set  _ = 'documents' %}
+    <div class="{{ _ }}">
+
+        <div class="{{ _ }}__general">
+            {% set  _ = 'confirmation' %}
+            <div class="{{ _ }} section section--no-top">
+                <h2 class="h2">Как подтвердить свои документы?</h2>
+                <div class="{{ _ }}__wrap">
+                    {% for i in range(1, 2) %}
+                        <a data-fancybox href="https://www.youtube.com/watch?v=l9npbq5HdWI" class="{{ _ }}__item">
+                            <div class="{{ _ }}__preview img video">
+                                <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+
+                                <div class="video-duration">1:51</div>
+                            </div>
+                            <div class="gap"></div>
+                            <strong>Как подтвердить свои документы</strong>
+
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            {% set  _ = 'rules' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Правила Американских и Европейских сайтов</h2>
+                <div class="{{ _ }}__wrap custom-slick-dots">
+
+                    {% set  list = [
+                        'Верификация модели с помощью документов, является обязательной процедурой для начала работы',
+                        'Верификация позволяет площадке убедиться, что Вы являетесь совершеннолетним человеком и Вы имеете права работать на площадке',
+                        'Без прохождения верификации ни одна площадка не допустит Вас к работе. Не важно как и где Вы собираетесь работать'] %}
+
+                    {% for item in list %}
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__icon">
+                                <img src="images/{{ _ }}/{{ loop.index }}.svg" alt=""/>
+                            </div>
+                            <div class="gap"></div>
+                            <p>{{ item }}</p>
+                        </div>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+
+
+            {% set  _ = 'banner' %}
+            <div class="{{ _ }} section">
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__content">
+                        <h3 class="h3">После просмотра видео
+                            остались вопросы?</h3>
+                        <span>Обратись за помощью к нашим специалистам!</span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--white">
+                            <img src="images/button-icon.svg" alt=""/>
+                            Нужна помощь</a>
+                    </div>
+                    <div class="{{ _ }}__img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+
+            {% set  _ = 'your-documents' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Ваши документы</h2>
+                <div class="{{ _ }}__wrap custom-slick-dots">
+
+                    {% set  list = [{
+                        title: 'Первая страница паспорта',
+                        subtitle: 'На фото не должно быть бликов. Данное фото должно быть в хорошем качестве'
+
+                    },    {
+                        title: 'Паспорт + лицо',
+                        subtitle: 'На фото не использовать очки, кепки, другие аксессуары и головные уборы. Все фото отправляются на площадку для одобрения Вашего аккаунта'
+                    },   {
+                        title: 'Паспорт + лицо + ник и дата на бумаге',
+                        subtitle: 'Ваш ник и дату Вам сообщат в чате с поддержкой. Пожалуйста обратитесь в чат и мы поможем пройти верефикацию'
+                    }] %}
+
+                    {% for item in list %}
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__img img">
+                                <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+                            </div>
+                            <div class="gap"></div>
+                            <h4 class="h4">{{ item.title }}</h4>
+                            <p>{{ item.subtitle }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+
+
+
+            {% set  _ = 'banner' %}
+            <div class="{{ _ }} section">
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__content">
+                        <h3 class="h3">Некоторые площадки принимают только онлайн верификацию!</h3>
+                        <span>Например площадка Chaturbate. Для прохождения онлайн верификации, обратитесь в нашу службу потдержки!</span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--white">
+                            <img src="images/button-icon.svg" alt=""/>
+                            Нужна помощь</a>
+                    </div>
+                    <div class="{{ _ }}__img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="documents__navigation">
+            <h4 class="h4">Навигация</h4>
+
+            {% set  list = [
+                'Как подтвердить свои документы?',
+                'Правила',
+                'Ваши документы',
+                'Верификация'] %}
+
+            <ul class="ul">
+                {% for item in list %}
+                    <li><a href="#">{{ item }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    {% set  _ = 'ancors' %}
+    <div class="{{ _ }} section section--no-bottom">
+        <div class="{{ _ }}__wrap">
+            <div class="{{ _ }}__topline">
+                {% set  list = [
+                    'Моя страница',
+                    'Площадки',
+                    'Документы',
+                    'Академия',
+                    'Инструменты',
+                    'Статистика и выплаты'] %}
+
+                {% for item in list %}
+                    <a href="#">{{ item }}</a>
+                {% endfor %}
+            </div>
+            <div class="{{ _ }}__cards">
+                <div class="{{ _ }}__card">
+                    <span>Telegram</span>
+                    <strong>
+                        <img src="images/telegram.svg" alt=""/>
+                        @VirtualStudio
+                    </strong>
+                </div>
+                <div class="{{ _ }}__card">
+
+                    <span>Telegram канал</span>
+                    <strong>
+                        <img src="images/telegram.svg" alt=""/>
+                        @VirtualStudio
+                    </strong>
+                </div>
+                <div class="{{ _ }}__card">
+                    <span>E-Mail</span>
+                    <strong>VirtualStudio@gmail.com</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
 {% endblock content %}

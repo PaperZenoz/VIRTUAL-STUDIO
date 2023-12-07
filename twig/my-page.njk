@@ -1,13 +1,6 @@
 {% set page = { title: 'Моя страница ' } %}
 {% extends "./2.parts/main.njk" %}
-
-
-
     {% set  active = 1 %}
-
-
-
-
 {% block content %}
     <h1 class="h1">Моя страница</h1>
     {% set  _ = 'data' %}
@@ -362,8 +355,8 @@
 
 
                 <picture>
-                    <source media="(max-width: 1439px)" srcset="images/{{ _ }}/12.png" />
-                    <source media="(max-width: 1919px)" srcset="images/{{ _ }}/11.png" />
+                    <source media="(max-width: 1439px)" srcset="images/{{ _ }}/12.png"/>
+                    <source media="(max-width: 1919px)" srcset="images/{{ _ }}/11.png"/>
                     <img src="images/{{ _ }}/1.png" alt=""/>
                 </picture>
 
@@ -382,8 +375,8 @@
                 </div>
                 <picture>
 
-                    <source media="(max-width: 1439px)" srcset="images/{{ _ }}/22.png" />
-                    <source media="(max-width: 1919px)" srcset="images/{{ _ }}/21.png" />
+                    <source media="(max-width: 1439px)" srcset="images/{{ _ }}/22.png"/>
+                    <source media="(max-width: 1919px)" srcset="images/{{ _ }}/21.png"/>
 
                     <img src="images/{{ _ }}/2.png" alt=""/>
                 </picture>
@@ -397,30 +390,29 @@
     {% set  _ = 'ancors' %}
 
     <div class="{{ _ }}">
-        <div class="{{_}}__wrap">
-            <div class="{{_}}__topline">
-            {% set  list = [
-                'Моя страница',
-                'Площадки',
-                'Документы',
-                'Академия',
-                'Инструменты',
-                'Статистика и выплаты']
-            %}
-                
-            {% for item in list %}
-                <a href="#">{{ item }}</a>
-            {% endfor %}
+        <div class="{{ _ }}__wrap">
+            <div class="{{ _ }}__topline">
+                {% set  list = [
+                    'Моя страница',
+                    'Площадки',
+                    'Документы',
+                    'Академия',
+                    'Инструменты',
+                    'Статистика и выплаты'] %}
+
+                {% for item in list %}
+                    <a href="#">{{ item }}</a>
+                {% endfor %}
             </div>
-            <div class="{{_}}__cards">
-                <div class="{{_}}__card">
+            <div class="{{ _ }}__cards">
+                <div class="{{ _ }}__card">
                     <span>Telegram</span>
                     <strong>
                         <img src="images/telegram.svg" alt=""/>
                         @VirtualStudio
                     </strong>
                 </div>
-                <div class="{{_}}__card">
+                <div class="{{ _ }}__card">
 
                     <span>Telegram канал</span>
                     <strong>
@@ -428,14 +420,14 @@
                         @VirtualStudio
                     </strong>
                 </div>
-                <div class="{{_}}__card">
+                <div class="{{ _ }}__card">
                     <span>E-Mail</span>
                     <strong>VirtualStudio@gmail.com</strong>
 
                 </div>
-            
+
             </div>
-        
+
         </div>
 
     </div>

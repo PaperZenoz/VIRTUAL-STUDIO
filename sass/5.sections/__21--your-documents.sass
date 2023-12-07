@@ -1,0 +1,18 @@
+.your-documents
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+    @media screen and (max-width: 1439px)
+      display: block
+      width: 345px
+
+
+  &__item
+    @extend %radius
+    background-color: $white
+    padding: 15px
+
+  &__img
+    height: 185px
+    @extend %radius

@@ -1,0 +1,24 @@
+.rules
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+    @media screen and (max-width: 1439px)
+      display: block
+      width: 345px
+
+
+  &__item
+    @extend %radius
+    padding: 30px
+    background-color: $white
+    @media screen and (max-width: 1439px)
+      padding: 15px 20px
+
+
+  &__icon
+    width: 45px
+    height: 45px
+    @extend %radius
+    background-color: $violet
+    @extend %fc

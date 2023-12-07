@@ -55,6 +55,29 @@ $(document).ready(function () {
         }
     }
 
+
+    function rules_slider() {
+        if ($(window).width() < 1440) {
+            $('.rules__wrap').slick({
+                arrows: false,
+                dots: true
+            })
+        } else {
+            $('.rules__wrap').slick('unslick')
+        }
+    }
+
+    function documents_slider() {
+        if ($(window).width() < 1440) {
+            $('.your-documents__wrap').slick({
+                arrows: false,
+                dots: true
+            })
+        } else {
+            $('.your-documents__wrap').slick('unslick')
+        }
+    }
+
     new SlimSelect({
         select: '#selectElement',
         settings: {
@@ -69,6 +92,8 @@ $(document).ready(function () {
         range_slider()
         videos_slider()
         partners_slider()
+        rules_slider()
+        documents_slider()
 
     }
 

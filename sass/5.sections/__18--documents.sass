@@ -1,0 +1,19 @@
+.documents
+  display: grid
+  grid-template-columns: auto 480px
+  grid-gap: 30px
+  @media screen and (max-width: 1919px)
+    grid-template-columns: 1fr
+
+
+  &__navigation
+    background-color: $white
+    @extend %radius
+    padding: 20px 30px
+    height: max-content
+    position: sticky
+    top: 0
+    @media screen and (max-width: 1919px)
+      display: none
+
+
