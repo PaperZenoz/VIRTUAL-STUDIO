@@ -86,11 +86,28 @@ $(document).ready(function () {
 
     })
 
-    function academy_list() {
+    function academy_slider() {
         $('.academy__item-header').on('click', function (e) {
             e.preventDefault()
             $(this).toggleClass('open')
             $(this).siblings('.academy__body').slideToggle()
+        })
+    }
+    
+    
+    function academy_page_slider() {
+        $('.academy-page__slider').slick({
+            arrows: true,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        dots: true,
+                        arrows: false
+                    }
+                }
+            ]
         })
     }
 
@@ -102,8 +119,8 @@ $(document).ready(function () {
         partners_slider()
         rules_slider()
         documents_slider()
-        academy_list()
-
+        academy_slider()
+        academy_page_slider()
     }
 
 
