@@ -3,54 +3,111 @@
    {% set  active = 4 %}
 {% block content %}
     <h1 class="h1">Академия</h1>
-    
 
 
+    {% set  _ = 'academy' %}
+    <div class="{{ _ }}">
 
+        <div>
 
-    {% set  _ = 'ancors' %}
-    <div class="{{ _ }} section section--no-bottom">
-        <div class="{{ _ }}__wrap">
-            <div class="{{ _ }}__topline">
+            <div class="{{ _ }}__list section section--no-top">
                 {% set  list = [
-                    'Моя страница',
-                    'Площадки',
-                    'Документы',
-                    'Академия',
-                    'Инструменты',
-                    'Статистика и выплаты'] %}
+                    '1. Анонимность',
+                    '2. Основы заработка в вебкам',
+                    '3. Профессия Специалист по контекстной рекламе',
+                    '4. Сбор семантического ядра. Часть 1',
+                    '5. Подготовка текстов и креативов для объявлений',
+                    '6. Сбор семантического ядра. Часть 1'] %}
 
                 {% for item in list %}
-                    <a href="#">{{ item }}</a>
+                    <div class="{{ _ }}__item">
+                        <div class="{{ _ }}__item-header">
+                            <h4 class="h4">{{ item }}</h4>
+                            <span>5 видео</span>
+                            <span>2 материалы</span>
+                        </div>
+                        <div class="{{ _ }}__body">
+                            <div class="{{_}}__body-list">
+                                {% set  list = [
+                                    '2.1 Вы можете зарабатывать деньги',
+                                    '2.2 Вы можете зарабатывать деньги можете',
+                                    '2.3 Вы можете зарабатывать',
+                                    '2.4 Вы можете деньги',
+                                    '2.5 Вы  зарабатывать деньги можете'] %}
+
+                                {% for item in list %}
+                                    <a href="https://www.youtube.com/watch?v=zlfmpC2CLEU" data-fancybox class="{{ _ }}__body-item">
+                                        <div class="{{ _ }}__img img">
+                                            <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+                                        </div>
+                                        <div class="gap"></div>
+                                        <strong>{{ item }}</strong>
+                                    </a>
+                                {% endfor %}
+                            </div>
+
+
+                        </div>
+                    </div>
                 {% endfor %}
-            </div>
-            <div class="{{ _ }}__cards">
-                <div class="{{ _ }}__card">
-                    <span>Telegram</span>
-                    <strong>
-                        <img src="images/telegram.svg" alt=""/>
-                        @VirtualStudio
-                    </strong>
-                </div>
-                <div class="{{ _ }}__card">
-
-                    <span>Telegram канал</span>
-                    <strong>
-                        <img src="images/telegram.svg" alt=""/>
-                        @VirtualStudio
-                    </strong>
-                </div>
-                <div class="{{ _ }}__card">
-                    <span>E-Mail</span>
-                    <strong>VirtualStudio@gmail.com</strong>
-
-                </div>
 
             </div>
 
+            {% set  _ = 'banner' %}
+            <div class="{{ _ }} section">
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__content">
+                        <h3 class="h3">Во время обучения появились вопросы?</h3>
+                        <span>Воспользуйся помощью наших специалистов!</span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--white">
+                            <img src="images/button-icon.svg" alt=""/>
+                            Нужна помощь</a>
+                    </div>
+                    <div class="{{ _ }}__img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </div>
+                </div>
+            </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+        {% set  _ = 'academy' %}
+        {% set  list = [{
+            title: 'Телеграмм канал',
+            subtitle: 'Больше интересных новостей
+из адалт индустрии'
+
+        },    {
+            title: 'Телеграмм чат',
+            subtitle: 'Общайся с другими моделями, задавай вопросы и заводи новых друзей'
+        }] %}
+        <div class="{{ _ }}__telegram">
+            {% for item in list %}
+                <div class="{{ _ }}__telegram-item">
+                    <h4 class="h4">{{ item.title }}</h4>
+                    <p>{{ item.subtitle }}</p>
+                    <div class="gap"></div>
+                    <a href="#" class="btn">
+                        <img src="images/telegram-white.svg" alt=""/>
+                        VirtualStudio</a>
+                </div>
+            {% endfor %}
+        </div>
     </div>
+
+
+
 
 
 {% endblock content %}

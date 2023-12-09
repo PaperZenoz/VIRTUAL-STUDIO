@@ -1,0 +1,71 @@
+{% set page = { title: '2.1 Вы можете зарабатывать деньги' } %}
+{% extends "./2.parts/main.njk" %}
+   {% set  active = 4 %}
+{% block content %}
+    <h1 class="h1">2.1 Вы можете зарабатывать деньги</h1>
+
+
+    {% set  _ = 'academy' %}
+    <div class="{{ _ }}">
+
+        <div>
+
+
+            {% set  _ = 'banner' %}
+            <div class="{{ _ }} section">
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__content">
+                        <h3 class="h3">Во время обучения появились вопросы?</h3>
+                        <span>Воспользуйся помощью наших специалистов!</span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--white">
+                            <img src="images/button-icon.svg" alt=""/>
+                            Нужна помощь</a>
+                    </div>
+                    <div class="{{ _ }}__img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        {% set  _ = 'academy' %}
+        {% set  list = [{
+            title: 'Телеграмм канал',
+            subtitle: 'Больше интересных новостей
+из адалт индустрии'
+
+        },    {
+            title: 'Телеграмм чат',
+            subtitle: 'Общайся с другими моделями, задавай вопросы и заводи новых друзей'
+        }] %}
+        <div class="{{ _ }}__telegram">
+            {% for item in list %}
+                <div class="{{ _ }}__telegram-item">
+                    <h4 class="h4">{{ item.title }}</h4>
+                    <p>{{ item.subtitle }}</p>
+                    <div class="gap"></div>
+                    <a href="#" class="btn">
+                        <img src="images/telegram-white.svg" alt=""/>
+                        VirtualStudio</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+
+{% endblock content %}

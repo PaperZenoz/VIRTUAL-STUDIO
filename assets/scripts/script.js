@@ -86,6 +86,14 @@ $(document).ready(function () {
 
     })
 
+    function academy_list() {
+        $('.academy__item-header').on('click', function (e) {
+            e.preventDefault()
+            $(this).toggleClass('open')
+            $(this).siblings('.academy__body').slideToggle()
+        })
+    }
+
 
     function sliders() {
         news_slider()
@@ -94,6 +102,7 @@ $(document).ready(function () {
         partners_slider()
         rules_slider()
         documents_slider()
+        academy_list()
 
     }
 
@@ -101,7 +110,7 @@ $(document).ready(function () {
     sliders()
 
     $(window).resize(function () {
-            sliders()
+        sliders()
     });
 
 })

@@ -1,0 +1,109 @@
+.academy
+  display: grid
+  grid-template-columns: auto 480px
+  grid-gap: 30px
+  @media screen and (max-width: 1919px)
+    grid-template-columns: 1fr
+    grid-gap: 60px
+
+  &__telegram
+    height: max-content
+    position: sticky
+    top: 0
+    @media screen and (max-width: 1919px)
+      order: -1
+      position: relative
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 30px
+    @media screen and (max-width: 1439px)
+      grid-template-columns: 1fr
+      grid-gap: 10px
+
+  &__telegram-item
+    margin-bottom: 30px
+    @extend %radius
+    background-color: $white
+    padding: 35px 30px
+    @extend %lc
+    background-image: url("../../images/academy/1.png")
+    background-position: top 35px right 10px
+    background-repeat: no-repeat
+    @media screen and (max-width: 1919px)
+      margin-bottom: 0
+
+    p
+      width: 300px
+      @media screen and (max-width: 1919px)
+        width: 260px
+
+
+  &__item
+    @extend %radius
+    background-color: $white
+    margin-bottom: 30px
+    @extend %lc
+
+  &__item-header
+    display: flex
+    gap: 30px
+    @extend %fy
+    padding: 25px 30px
+    cursor: pointer
+    @media screen and (max-width: 1439px)
+      display: block
+      padding: 25px 40px 25px 30px
+
+
+    span
+      color: $violet-text
+
+    .h4
+      margin-bottom: 0
+      @media screen and (max-width: 1439px)
+        display: block
+        width: 100%
+
+
+    position: relative
+
+    &:before
+      content: ''
+      width: 36px
+      height: 36px
+      background-color: $gray
+      position: absolute
+      right: 30px
+      top: 50%
+      transform: translateY(-50%) rotate(180deg)
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.83203 7.66675L8.33203 1.00008L14.832 7.66675' stroke='%238584AD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+      background-repeat: no-repeat
+      background-position: center
+      @extend %transition
+      @include r(10px)
+      @media screen and (max-width: 1439px)
+        right: 10px
+        top: 30px
+
+    &.open:before
+      transform: translateY(-50%) rotate(0deg)
+
+  &__body
+
+    display: none
+
+  &__body-list
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+    padding: 30px
+    @media screen and (max-width: 1439px)
+      grid-template-columns: 1fr
+
+
+  &__img
+    height: 165px
+    @extend %radius
+
+
+

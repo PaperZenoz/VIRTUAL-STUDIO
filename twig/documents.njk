@@ -145,49 +145,5 @@
 
 
 
-    {% set  _ = 'ancors' %}
-    <div class="{{ _ }} section section--no-bottom">
-        <div class="{{ _ }}__wrap">
-            <div class="{{ _ }}__topline">
-                {% set  list = [
-                    'Моя страница',
-                    'Площадки',
-                    'Документы',
-                    'Академия',
-                    'Инструменты',
-                    'Статистика и выплаты'] %}
-
-                {% for item in list %}
-                    <a href="#">{{ item }}</a>
-                {% endfor %}
-            </div>
-            <div class="{{ _ }}__cards">
-                <div class="{{ _ }}__card">
-                    <span>Telegram</span>
-                    <strong>
-                        <img src="images/telegram.svg" alt=""/>
-                        @VirtualStudio
-                    </strong>
-                </div>
-                <div class="{{ _ }}__card">
-
-                    <span>Telegram канал</span>
-                    <strong>
-                        <img src="images/telegram.svg" alt=""/>
-                        @VirtualStudio
-                    </strong>
-                </div>
-                <div class="{{ _ }}__card">
-                    <span>E-Mail</span>
-                    <strong>VirtualStudio@gmail.com</strong>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
 
 {% endblock content %}
