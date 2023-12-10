@@ -78,6 +78,17 @@ $(document).ready(function () {
         }
     }
 
+    function instruments_slider() {
+        if ($(window).width() < 1440) {
+            $('.instruments__list').slick({
+                arrows: false,
+                dots: true
+            })
+        } else {
+            $('.instruments__list').slick('unslick')
+        }
+    }
+
     new SlimSelect({
         select: '#selectElement',
         settings: {
@@ -121,6 +132,7 @@ $(document).ready(function () {
         documents_slider()
         academy_slider()
         academy_page_slider()
+        instruments_slider()
     }
 
 
