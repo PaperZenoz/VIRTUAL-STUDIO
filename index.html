@@ -19,7 +19,7 @@
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js"></script>
 
 <script src="assets/scripts/script.js"></script>
 </head>
@@ -257,9 +257,100 @@
             <a href="payments.html" class="btn btn--second btn--bg"
                style="width: 100%">Статистика и выплаты</a>
         
+        <div class="gap"></div>
+        <h2 class="h2">Всплывающие окна</h2>
+        <a href="#model-registration" data-fancybox="" class="btn">Регистрация для моделей</a>
+        <a href="#congratulations" data-fancybox="" class="btn">Поздравляем с регистрацией</a>
+        <a href="#login" data-fancybox="" class="btn">Войти Virtual Studio</a>
+        <a href="#recover-password" data-fancybox="" class="btn">Восстановить пароль</a>
+        <a href="#recover-password--second" data-fancybox="" class="btn">Восстановить пароль (2)</a>
+        <a href="#recover-password--third" data-fancybox="" class="btn">Восстановить пароль (3)</a>
     </div>
-    <h2 class="h2">Всплывающие окна</h2>
 
+    
+    <div id="model-registration" class="popup" style="display: none">
+        <h3 class="h3">Регистрация для моделей</h3>
+        <input type="text" class="input" placeholder="ФИО">
+        <select class="selectElement">
+            <option data-placeholder="true">Пол</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </select>
+        <input type="text" class="input" placeholder="Дата рождения">
+        <input type="text" class="input js--tel" placeholder="Телефон">
+        <input type="text" class="input" placeholder="E-mail">
+
+        <div class="password">
+            <input type="password" class="input" placeholder="Пароль">
+        </div>
+        <div class="password">
+            <input type="text" class="input" placeholder="Повторите пароль">
+        </div>
+
+        <div class="btn btn--dark-violet">Зарегистрироваться</div>
+        <div class="gap"></div>
+        <div class="popup__ancors">
+            <a href="#">Войти</a>
+            <a href="#">Добавить код студии</a>
+        </div>
+
+    </div>
+    <div id="congratulations" class="popup" style="display: none">
+        <div class="popup__text-center">
+            <h3 class="h3">Поздравляем с регистрацией</h3>
+            <p>Остался последний шаг. Перейди в свою электронную почту и подтверди регистрацию в письме которое мы
+                отправили тебе.</p>
+            <p> Не забудь проверить раздел “Спам”</p>
+        </div>
+        <div class="gap"></div>
+        <a href="#" class="btn">Хорошо</a>
+
+    </div>
+    <div id="login" class="popup" style="display: none">
+        <h3 class="h3">Войти Virtual Studio</h3>
+        <input type="text" class="input js--tel">
+        <div class="password">
+            <input type="password" class="input">
+        </div>
+        <a href="#" class="btn btn--dark-violet">Отправить</a>
+        <div class="gap"></div>
+        <div class="popup__ancors">
+            <a href="#">Восстановить пароль</a>
+            <a href="#">Регистрация</a>
+        </div>
+    </div>
+    <div id="recover-password" class="popup" style="display: none">
+        <h3 class="h3">Восстановить пароль</h3>
+        <input type="text" class="input" placeholder="E-mail">
+        <a href="#" class="btn btn--dark-violet">Отправить</a>
+        <div class="gap"></div>
+        <div class="popup__ancors">
+            <a href="#">Вход</a>
+            <a href="#">Регистрация</a>
+        </div>
+    </div>
+    <div id="recover-password--second" class="popup" style="display: none">
+        <h3 class="h3">Восстановить пароль</h3>
+        <div class="popup__text-center">
+            <p>Мы отправили Вам на почту всю необходимую информацию для восстановления пароля.</p>
+            <p> Перейдите в Ваш почтовый ящик</p>
+        </div>
+
+        <div class="gap"></div>
+        <a href="#" class="btn">Хорошо</a>
+    </div>
+    <div id="recover-password--third" class="popup" style="display: none">
+        <h3 class="h3">Восстановить пароль</h3>
+        <div class="password">
+            <input type="password" class="input" placeholder="Пароль">
+        </div>
+        <div class="password">
+            <input type="password" class="input" placeholder="Повторите пароль">
+        </div>
+        <a href="#" class="btn btn--dark-violet">Отправить</a>
+        <div class="gap"></div>
+    </div> 
 
 
 

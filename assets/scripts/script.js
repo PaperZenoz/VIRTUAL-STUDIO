@@ -55,7 +55,6 @@ $(document).ready(function () {
         }
     }
 
-
     function rules_slider() {
         if ($(window).width() < 1440) {
             $('.rules__wrap').slick({
@@ -90,12 +89,13 @@ $(document).ready(function () {
     }
 
     new SlimSelect({
-        select: '#selectElement',
+        select: '.selectElement',
         settings: {
             showSearch: false
         }
-
     })
+
+
 
     function academy_slider() {
         $('.academy__item-header').on('click', function (e) {
@@ -104,8 +104,7 @@ $(document).ready(function () {
             $(this).siblings('.academy__body').slideToggle()
         })
     }
-    
-    
+
     function academy_page_slider() {
         $('.academy-page__slider').slick({
             arrows: true,
@@ -121,6 +120,8 @@ $(document).ready(function () {
             ]
         })
     }
+
+    $('.js--tel').inputmask("+7 (999) 999-9999")
 
 
     function sliders() {

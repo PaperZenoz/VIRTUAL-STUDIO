@@ -1,0 +1,44 @@
+.popup
+  @extend %radius
+  background-color: $white
+  max-width: 410px
+  width: 100%
+  padding: 40px 30px
+
+  &:before
+    content: ''
+    display: block
+    width: 57px
+    height: 47px
+    margin: 0px auto 15px
+    background-image: url("data:image/svg+xml,%3Csvg width='58' height='47' viewBox='0 0 58 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36.2764 25.0283C40.1055 29.0106 40.1055 35.3063 36.2764 39.2886C32.2289 43.498 25.4932 43.498 21.4457 39.2886C17.6166 35.3063 17.6166 29.0106 21.4457 25.0283C25.4932 20.819 32.2289 20.819 36.2764 25.0283Z' fill='%23AA84CA'/%3E%3Cpath d='M22.0068 7.71194C25.836 11.6942 25.836 17.9899 22.0068 21.9722C17.9594 26.1816 11.2237 26.1816 7.1762 21.9722C3.34708 17.9899 3.34708 11.6942 7.1762 7.71194C11.2237 3.50255 17.9594 3.50255 22.0068 7.71194Z' fill='%23AA84CA'/%3E%3Cpath d='M50.5498 7.71194C54.3789 11.6942 54.3789 17.9899 50.5498 21.9722C46.5023 26.1816 39.7667 26.1816 35.7192 21.9722C31.8901 17.9899 31.8901 11.6942 35.7192 7.71194C39.7667 3.50255 46.5023 3.50255 50.5498 7.71194Z' fill='%23AA84CA'/%3E%3C/svg%3E%0A")
+
+  .input
+    margin-bottom: 15px
+
+  .h3
+    text-align: center
+
+  .btn
+    margin-top: 15px
+    width: 100%
+
+  .selectElement
+    margin-bottom: 15px
+
+  .password
+    margin-bottom: 15px
+
+    input
+      margin-bottom: 0
+
+  &__ancors
+    display: flex
+    justify-content: center
+    gap: 10px
+    font-size: 16px
+    a
+      color: $violet
+      
+  &__text-center
+      text-align: center
