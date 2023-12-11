@@ -1,0 +1,41 @@
+.payments
+  &__form-wrap
+    padding: 40px 30px
+    @extend %radius
+    background-color: $white
+    @media screen and (max-width: 1439px)
+      padding: 35px 15px
+
+
+    &--two
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 30px
+      @media screen and (max-width: 1439px)
+        grid-template-columns: 1fr
+        grid-gap: 10px
+
+
+    &--three
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-gap: 30px
+      @media screen and (max-width: 1439px)
+        grid-template-columns: 1fr
+        grid-gap: 10px
+
+  &__plate
+    @extend %fb
+
+    &--violet
+      color: $white
+      background-color: $violet
+
+
+  &__empty-block
+    @media screen and (max-width: 1439px)
+      	display: none
+
+
+
+

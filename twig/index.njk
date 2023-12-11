@@ -38,15 +38,17 @@
         subtitle: 'instruments'
     }, {
         title: 'Статистика и выплаты',
-        subtitle: 'payments' 
+        subtitle: 'payments'
     }] %}
 
-    <div class="ancors section">
+    <h2 class="h2">Страницы</h2>
+    <div class="ancors section section--no-top">
         {% for item in list %}
             <a href="{{ item.subtitle }}.html" class="btn btn--second btn--bg"
                style="width: 100%">{{ item.title }}</a>
         {% endfor %}
     </div>
+    <h2 class="h2">Всплывающие окна</h2>
 
 
 

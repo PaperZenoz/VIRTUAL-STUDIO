@@ -1,0 +1,51 @@
+.payment-dates
+  &__wrap
+    @extend %radius
+    padding: 45px
+    background-color: $white
+    @media screen and (max-width: 1439px)
+      padding: 15px
+
+
+  &__video
+    height: 500px
+    display: block
+    @extend %radius
+    margin-bottom: 30px
+    @media screen and (max-width: 1439px)
+      margin-bottom: 10px
+      height: 175px
+
+  &__list
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 30px
+    @media screen and (max-width: 1439px)
+      grid-gap: 10px
+      grid-template-columns: 1fr
+
+  &__item
+    @extend %fb
+    align-items: center
+    @media screen and (max-width: 1439px)
+      justify-content: center
+      font-size: 14px
+
+
+    span
+      color: $violet-text
+
+      &:before, &:after
+        content: ''
+        display: inline-block
+        width: 6px
+        height: 6px
+        background-color: $violet-text
+        margin: 0 15px 2px
+        @include r(50%)
+        line-height: 18px
+        @media screen and (max-width: 1439px)
+          margin: 0 10px 2px
+        
+        	
+        

@@ -1,0 +1,35 @@
+.urgent-payment
+  &__wrap
+    @extend %radius
+    color: $white
+    padding: 35px 45px
+    background: linear-gradient(90deg, #AA84CA 44.05%, #C8A1E5 70.69%)
+    position: relative
+    @media screen and (max-width: 1439px)
+      height: 600px
+      padding: 25px 15px
+      background: linear-gradient(180deg, #AA84CA 0%, #AA84CA 0.01%, #C8A1E5 100%)
+
+  &__content
+    max-width: 570px
+
+  &__img
+    position: absolute
+    right: 0
+    bottom: 0
+    pointer-events: none
+
+    img:first-child
+      @media screen and (max-width: 1439px)
+        display: none
+
+    img:nth-child(2)
+      display: none
+      @media screen and (max-width: 1439px)
+        display: block
+
+
+
+
+
+

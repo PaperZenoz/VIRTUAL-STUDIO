@@ -3,4 +3,175 @@
    {% set  active = 6 %}
 {% block content %}
     <h1 class="h1">Статистика и выплаты</h1>
+    {% set  _ = 'academy' %}
+    <div class="{{ _ }}">
+
+        <div>
+            {% set  _ = 'escort' %}
+            <div class="{{ _ }} section section--no-top">
+                <div class="{{ _ }}__wrap">
+                    <a href="https://www.youtube.com/watch?v=tBO2NdmRHeI" data-fancybox="" class="{{ _ }}__img img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </a>
+                    <div class="{{ _ }}__content">
+                        <h4 class="h4">В данном разделе Вам необходимо заполнить реквизиты для выплат</h4>
+                        <p>После окончания периода Вы всегда сможете посмотреть Ваш заработок по каждой площадке</p>
+                        <p>Более подробно рассказано в нашем видео</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="gap"></div>
+            {% set  _ = 'banner' %}
+            <div class="{{ _ }} section">
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__content">
+                        <h3 class="h3">Нужна консультация по выплатам</h3>
+                        <span>Обратитесь к специалистам CASHROOM</span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--white">
+                            <img src="images/button-icon.svg" alt=""/>
+                            Нужна помощь</a>
+                        <div class="gap"></div>
+                    </div>
+                    <div class="{{ _ }}__img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+            {% set  _ = 'payments' %}
+            <div class="{{ _ }}__form  section">
+                <div class="{{ _ }}__form-wrap {{ _ }}__form-wrap--two">
+                    <select id="selectElement">
+                        <option>2023 &#183; 1 - 15 мая</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                    <div class="{{ _ }}__empty-block"></div>
+                    <div class="{{ _ }}__plate input">
+                        <span>Chaturbate</span>
+                        <strong>1500$</strong>
+                    </div>
+                    <div class="{{ _ }}__plate input">
+                        <span>Stripchat</span>
+                        <strong>200$</strong>
+                    </div>
+                    <div class="{{ _ }}__plate input">
+                        <span>Skyprivat</span>
+                        <strong>30$</strong>
+                    </div>
+                    <div class="{{ _ }}__plate input {{ _ }}__plate--violet">
+                        <span>Общий заработок</span>
+                        <strong>1730$</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            {% set  _ = 'payment-method' %}
+            <div class="{{ _ }} section">
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__content">
+                        <h3 class="h3">Обязательно укажите способ выплаты!</h3>
+                        <p>Мы совершаем платежи на карты Российских банков, чтоб Вам было максимально легко и просто
+                            получить свои деньги</p>
+                        <p>Не правильно указанные реквизиты приведут к потере денег!
+                            Будьте придельное внимательны при вводе номера карты.</p>
+                    </div>
+                    <div class="{{ _ }}__img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% set  _ = 'payments' %}
+
+            <div class="{{ _ }}__form  section">
+                <h2 class="h2">Данные для выплат</h2>
+                <div class="{{ _ }}__form-wrap {{ _ }}__form-wrap--three">
+                    <input type="text" class="input" placeholder="Выберите карту">
+                    <input type="text" class="input" placeholder="Номер банка">
+                    <a href="#" class="btn">Сохранить</a>
+                </div>
+
+            </div>
+
+
+            {% set  _ = 'payment-dates' %}
+            <div class="{{ _ }} section">
+                <h2 class="h2">Когда происходят выплаты?</h2>
+                <div class="{{ _ }}__wrap">
+                    <a href="https://www.youtube.com/watch?v=r6OxY3hqEPc" data-fancybox=""
+                       class="{{ _ }}__video img video">
+                        <img src="images/{{ _ }}/1.jpg" alt=""/>
+                    </a>
+                    <h4 class="h4">Все выплаты производятся в соответствии с датами когда площадки отправляют Ваши
+                        выплаты</h4>
+                    <p>Просим ознакомиться с видео и подробными датами выплат</p>
+                    <div class="gap"></div>
+                    <div class="{{ _ }}__list">
+                        <div class="{{ _ }}__item input">
+                            <strong>За 1-15 мая </strong>
+                            <span>мы выплатим</span>
+                            <strong>23 мая</strong>
+                        </div>
+                        <div class="{{ _ }}__item input">
+                            <strong>За 15-31 мая </strong>
+                            <span>мы выплатим</span>
+                            <strong>7 июня</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            {% set  _ = 'urgent-payment' %}
+            <div class="{{ _ }} section">
+                <div class="{{ _ }}__wrap">
+                    <div class="{{ _ }}__content">
+                        <h3 class="h3">Если Вам нужны срочно деньги</h3>
+                        <p>Вы не готовы ждать дату выплат, то Вы всегда можете подать заявку на срочную выплату за
+                            дополнительный процент</p>
+                        <div class="gap"></div>
+                        <a href="#" class="btn btn--white">Запросить выплату</a>
+                    </div>
+                    <div class="{{ _ }}__img">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                        <img src="images/{{ _ }}/2.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        {% set  _ = 'academy' %}
+        {% set  list = [{
+            title: 'Телеграмм канал',
+            subtitle: 'Больше интересных новостей
+из адалт индустрии'
+
+        },    {
+            title: 'Телеграмм чат',
+            subtitle: 'Общайся с другими моделями, задавай вопросы и заводи новых друзей'
+        }] %}
+        <div class="{{ _ }}__telegram">
+            {% for item in list %}
+                <div class="{{ _ }}__telegram-item">
+                    <h4 class="h4">{{ item.title }}</h4>
+                    <p>{{ item.subtitle }}</p>
+                    <div class="gap"></div>
+                    <a href="#" class="btn">
+                        <img src="images/telegram-white.svg" alt=""/>
+                        VirtualStudio</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock content %}
