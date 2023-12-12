@@ -1,0 +1,60 @@
+{% set page = { title: 'Покупки/заявки' } %}
+{% extends "./2.parts/main--2.njk" %}
+    {% set  active = 4 %}
+{% block content %}
+    <h1 class="h1">Покупки/заявки</h1>
+    {% set  _ = 'my-models' %}
+    <div class="{{ _ }}">
+        <div class="{{ _ }}__fields">
+            <div class="input--search">
+                <input type="text" class="input" placeholder="Поиск">
+            </div>
+            <input type="text" class="input" placeholder="Выберите дату">
+
+        </div>
+
+        <div class="table-wrap">
+            <table class="table">
+                <tr>
+                    <th>Модель</th>
+                    <th>ID модели</th>
+                    <th>Логин на сайтах</th>
+                    <th>Пол</th>
+                    <th>Номер телефона</th>
+                    <th>Телеграмм</th>
+                    <th>Ранг</th>
+                    <th>CR баллы</th>
+                    <th>Instagram</th>
+                    <th>Сообщения</th>
+                    <th>Данные</th>
+                </tr>
+                {% for i in range(1, 15) %}
+                    <tr>
+                        <td>Бобровская Анастасия</td>
+                        <td>000001</td>
+                        <td>Evarayqq</td>
+                        <td>Женский</td>
+                        <td>8 988 888 88 88</td>
+                        <td><span class="{{ _ }}__plate">Добавить</span></td>
+                        <td>Божество</td>
+                        <td>100</td>
+                        <td>VirtualStudio</td>
+                        <td style="text-align: center"><img src="images/core-bell.svg" alt=""/></td>
+                        <td style="text-align: center"><img src="images/important.svg" alt=""/></td>
+                    </tr>
+                {% endfor %}
+
+
+            </table>
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+{% endblock content %}

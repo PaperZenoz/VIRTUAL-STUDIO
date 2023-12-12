@@ -1,0 +1,136 @@
+.messages
+  display: flex
+  gap: 30px
+  @media screen and (max-width: 1439px)
+    flex-direction: column
+
+
+  &__users
+    max-height: 865px
+    overflow-y: scroll
+    @extend %scrollbar
+
+  &__user
+    height: 75px
+    @extend %fb
+    align-items: center
+    padding: 10px
+    margin-bottom: 10px
+    @extend %lc
+    margin-right: 10px
+
+    @extend %radius
+
+    &.active
+      background-color: $white
+      border-left: 1px solid $violet
+
+  &__img
+    @extend %radius
+    width: 55px
+    height: 55px
+    margin-right: 15px
+
+  &__username
+    strong
+      display: block
+
+  &__time
+    align-self: flex-start
+    justify-self: flex-end
+
+  &__userlist
+    width: 360px
+    flex-shrink: 0
+
+  &__user-general
+    display: flex
+
+  &__right
+    span
+      color: $white
+      height: 18px
+      width: 18px
+      @extend %fc
+      background-color: $violet
+      @include r(50%)
+      margin-left: auto
+      margin-top: 5px
+
+      font-size: 11px
+
+  &__core
+    width: 100%
+
+  &__core-user
+    height: 65px
+    background-color: $white
+    @extend %fy
+    @extend %radius
+    margin-bottom: 10px
+    padding: 0 15px
+
+  &__core-img
+    width: 45px
+    height: 45px
+    margin-right: 15px
+
+  &__core-username
+    strong
+      display: block
+
+    span
+      color: $violet
+
+  &__item-img
+    width: 45px
+    height: 45px
+    flex-shrink: 0
+
+  &__list
+    background-color: $white
+    @extend %radius
+    padding: 30px
+    max-height: 720px
+    overflow-y: scroll
+    @extend %scrollbar
+
+  &__item
+    display: flex
+    grid-gap: 15px
+    margin-bottom: 30px
+
+  &__item-text
+    span
+      background-color: $violet
+      color: $white
+      display: block
+      padding: 10px 20px
+      margin-bottom: 10px
+      max-width: 450px
+      @extend %radius
+
+      &:first-child
+        border-radius: 0px 15px 15px 15px
+
+  &__item.interlocutor
+    flex-direction: row-reverse
+
+    span
+      background-color: $gray
+      color: $black
+
+      &:first-child
+        border-radius: 15px 0px 15px 15px
+
+  &__send
+    padding: 30px
+    background-color: $white
+    display: flex
+    gap: 10px
+    .btn
+      width: 55px
+      height: 55px
+      flex-shrink: 0
+      padding: 0
+      min-width: auto

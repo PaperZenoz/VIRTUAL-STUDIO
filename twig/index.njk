@@ -39,6 +39,21 @@
     }, {
         title: 'Статистика и выплаты',
         subtitle: 'payments'
+    }, {
+        title: 'Сообщения',
+        subtitle: 'messages'
+    }, {
+        title: 'Моя студия',
+        subtitle: 'my-studio'
+    }, {
+        title: 'Мои модель',
+        subtitle: 'my-models'
+    }, {
+        title: 'CRM',
+        subtitle: 'crm'
+    }, {
+        title: 'Покупки/заявки',
+        subtitle: 'request'
     }] %}
 
     <h2 class="h2">Страницы</h2>
@@ -55,6 +70,11 @@
         <a href="#recover-password" data-fancybox="" class="btn">Восстановить пароль</a>
         <a href="#recover-password--second" data-fancybox="" class="btn">Восстановить пароль (2)</a>
         <a href="#recover-password--third" data-fancybox="" class="btn">Восстановить пароль (3)</a>
+        <a href="#confirmation-cr" data-fancybox="" class="btn">Вы подтверждаете покупку за баллы CR</a>
+        <a href="#paid" data-fancybox="" class="btn">Покупка оплачена с вами свяжется менеджер</a>
+        <a href="#send-request" data-fancybox="" class="btn">Отправить заявку на покупку</a>
+        <a href="#confirmation-sending" data-fancybox="" class="btn">Заявка отправлена с вами свяжется менеджер</a>
+        <a href="#instrument" data-fancybox="" class="btn">Инструмент</a>
     </div>
 
     {% set  _ = 'popup' %}
@@ -140,7 +160,58 @@
         </div>
         <a href="#" class="btn btn--dark-violet">Отправить</a>
         <div class="gap"></div>
-    </div> 
+    </div>
+    <div id="confirmation-cr" class="popup" style="display: none">
+        <a href="#" class="{{_}}__back"></a>
+        <h3 class="h3">Вы подтверждаете покупку за баллы CR</h3>
+        <div class="gap"></div>
+        <div class="btn">Да</div>
+    </div>
+    <div id="paid" class="popup" style="display: none">
+        <a href="#" class="{{_}}__back"></a>
+        <h3 class="h3">Покупка оплачена с вами свяжется менеджер</h3>
+        <div class="gap"></div>
+        <div class="btn">Спасибо</div>
+    </div>
+    <div id="send-request" class="popup" style="display: none">
+        <a href="#" class="{{_}}__back"></a>
+        <h3 class="h3">Отправить заявку на покупку</h3>
+        <div class="gap"></div>
+        <div class="btn">Да</div>
+    </div>
+    <div id="send-request" class="popup" style="display: none">
+        <a href="#" class="{{_}}__back"></a>
+        <h3 class="h3">Отправить заявку на покупку</h3>
+        <div class="gap"></div>
+        <div class="btn">Да</div>
+    </div>
+    <div id="confirmation-sending" class="popup" style="display: none">
+        <a href="#" class="{{_}}__back"></a>
+        <h3 class="h3">Заявка отправлена с вами свяжется менеджер</h3>
+        <div class="gap"></div>
+        <div class="btn">Спасибо</div>
+    </div>
+    <div id="instrument" class="popup popup--instrument" style="display: none">
+        <a href="#" class="{{_}}__back"></a>
+        <div class="instruments__item">
+            <div class="instruments__img img">
+                <img src="images/instruments/1.png" alt="">
+            </div>
+            <div class="gap"></div>
+            <strong>Создатель платформы</strong>
+            <div class="gap"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            <div class="gap"></div>
+            <div class="instruments__price">
+                <h4 class="h4">
+                    <span>100</span>
+                    <a href="#" class="btn">Оплатить</a>
+                </h4> <h4 class="h4">100$
+                    <a href="#" class="btn">Оставить заявку</a>
+                </h4>
+            </div>
+        </div>
+    </div>
 
 
 {% endblock content %}

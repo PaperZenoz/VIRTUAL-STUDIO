@@ -1,0 +1,27 @@
+.my-models
+  &__fields
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 30px
+    margin-bottom: 45px
+    @media screen and (max-width: 1439px)
+      grid-template-columns: repeat(1, 1fr)
+      margin-bottom: 30px
+      grid-gap: 10px
+
+    .input
+      background-color: $white
+      flex-shrink: 0
+
+    .input--search
+      @media screen and (max-width: 1439px)
+        margin-bottom: 0
+
+  &__plate
+    padding: 4px 8px
+    color: $violet
+    background-color: $gray
+    @include r(5px)
+      
+      	
+      
