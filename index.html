@@ -6,8 +6,8 @@
     <title>Ссылки</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-<link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"></link>
+<link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+<script src="assets/fileUpload/fileUpload.css"></script>
 <link rel="stylesheet" href="assets/css/style.css">
 
 
@@ -16,11 +16,8 @@
 <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js"></script>
-
+<script src="assets/fileUpload/fileUpload.js"></script>
 <script src="assets/scripts/script.js"></script>
 </head>
 <body>
@@ -290,20 +287,23 @@
         <a href="#documents" data-fancybox="" class="btn">Документы</a>
         <a href="#photo" data-fancybox="" class="btn">Фото</a>
         <a href="#description" data-fancybox="" class="btn">Описание</a>
-        <a href="#platforms" data-fancybox="" class="btn">Данные для площадок</a> 
+        <a href="#platforms" data-fancybox="" class="btn">Данные для площадок</a>
         <a href="#studio-registration" data-fancybox="" class="btn">Регистрация для студии</a>
+        <a href="#download" data-fancybox="" class="btn">Загрузка файлов</a>
     </div>
 
     
-    <div id="model-registration" class="popup" style="display: none">
+    <div id="model-registration" class="popup" style="display: block">
         <h3 class="h3">Регистрация для моделей</h3>
         <input type="text" class="input" placeholder="ФИО">
-        <select class="selectElement">
-            <option data-placeholder="true">Пол</option>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-        </select>
+        <div class="checkselect" data-placeholder="Пол">
+            <label><input type="checkbox" name="brands[]" value="1"><span></span> Google Inc.</label>
+            <label><input type="checkbox" name="brands[]" value="2"><span></span> Apple Inc.</label>
+            <label><input type="checkbox" name="brands[]" value="3"><span></span> Microsoft</label>
+            <label><input type="checkbox" name="brands[]" value="4"><span></span> Facebook</label>
+            <label><input type="checkbox" name="brands[]" value="5"><span></span> Amazon</label>
+            <label><input type="checkbox" name="brands[]" value="6"><span></span> Verizon</label>
+        </div>
         <input type="text" class="input" placeholder="Дата рождения">
         <input type="text" class="input js--tel" placeholder="Телефон">
         <input type="text" class="input" placeholder="E-mail">
@@ -449,7 +449,6 @@
 
         <a href="#" class="btn">Сохранить</a>
     </div>
-
     <div id="documents" class="popup popup--no-logo popup--big" style="display: none">
         <div class="popup__document-head">
             <a href="#"><strong>
@@ -991,7 +990,7 @@
         <a href="#" class="popup__back"></a>
         <h3 class="h3">Данные для площадок</h3>
         
-            
+
         
             <strong>E-mail</strong>
             <div class="gap"></div>
@@ -1040,11 +1039,6 @@
         
 
     </div>
-
-
-
-
-
     <div id="studio-registration" class="popup popup--big" style="display: none">
         <a href="#" class="popup__back"></a>
         <h3 class="h3">Регистрация для студии</h3>
@@ -1067,6 +1061,26 @@
         <div class="gap"></div>
         <p>Код студии - это ключевая фраза, которую указывают модели для регистрации под Ваш студийный аккаунт</p>
     </div>
+    <div id="download" class="popup popup--download" style="display: none">
+        <h3 class="h3">Загрузить</h3>
+        <div style="text-align: center">
+            <strong>Нажмите или перетащите, чтобы загрузить файлы</strong>
+        </div>
+        <div class="gap"></div>
+        <div id="fileUpload" class="file-container">
+            <span></span>
+            <label for="fileUpload-1" class="file-upload">
+
+                <input type="file" id="fileUpload-1" name="[]" multiple="multiple" hidden="">
+            </label>
+        </div>
+        <a href="#" class="btn">Загрузить файлы</a>
+    </div>
+
+
+
+
+
 
 
             
