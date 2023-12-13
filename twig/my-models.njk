@@ -1,124 +1,56 @@
-{% set page = { title: 'Моя студия' } %}
+{% set page = { title: 'Мои модели' } %}
 {% extends "./2.parts/main--2.njk" %}
-    {% set  active = 2 %}
+    {% set  active = 1 %}
 {% block content %}
-    <h1 class="h1">Моя страница</h1>
-    {% set  _ = 'data' %}
-    <div class="{{ _ }} section section--no-top">
-        <div class="{{ _ }}__wrap">
-            <div class="{{ _ }}__photo img">
-                <img src="images/{{ _ }}/2.jpg" alt=""/>
+    <h1 class="h1">Мои модели</h1>
+    {% set  _ = 'my-models' %}
+    <div class="{{_}}">
+        <div class="{{_}}__fields">
+            <div class="input--search">
+                <input type="text" class="input" placeholder="Поиск">
             </div>
-            <div class="{{ _ }}__general">
-                <div class="{{ _ }}__block">
-                    <h4 class="h4">
-                        Данные студии &nbsp;
-                        <a href="#">
-                            <img src="images/edit.svg" alt=""/>
-                        </a>
-                    </h4>
-                    <div class="{{ _ }}__list">
-                        {% set  list = [{
-                            title: 'Название студии',
-                            subtitle: 'CASHROOM'
-                        },    {
-                            title: 'Имя руководителя',
-                            subtitle: 'Бобровская Анастасия Сергеевна'
-                        }] %}
 
-                        {% for item in list %}
-                            <div class="{{ _ }}__item">
-                                <span>{{ item.title }}</span>
-                                <strong>{{ item.subtitle }}</strong>
-                                {% if loop.index == 3 %}
-                                    <strong><a href="#" class="link">Добавить</a></strong>
-                                {% endif %}
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-
-
-                <div class="{{ _ }}__block">
-                    <h4 class="h4">
-                        Контактная информация &nbsp;
-                        <a href="#">
-                            <img src="images/edit.svg" alt=""/>
-                        </a>
-                    </h4>
-                    <div class="{{ _ }}__list">
-                        {% set  list = [{
-                            title: 'Телефон',
-                            subtitle: '8 888 888 88 88'
-                        },    {
-                            title: 'E-mail',
-                            subtitle: 'evaraay@gmail.com'
-                        },   {
-                            title: 'Telegram',
-                            subtitle: '@EvaRaay'
-                        }] %}
-
-                        {% for item in list %}
-                            <div class="{{ _ }}__item">
-                                <span>{{ item.title }}</span>
-                                <strong>{{ item.subtitle }}</strong>
-                            </div>
-                        {% endfor %}
-
-
-                    </div>
-
-                </div>
-
+            <div class="table-wrap">
+                <table class="table">
+                    <tr>
+                        <th>Модель</th>
+                        <th>ID модели</th>
+                        <th>Логин на сайтах</th>
+                        <th>Пол</th>
+                        <th>Номер телефона</th>
+                        <th>Телеграмм</th>
+                        <th>Ранг</th>
+                        <th>CR баллы</th>
+                        <th>Instagram</th>
+                        <th>Сообщения</th>
+                        <th>Данные</th>
+                    </tr>
+                    <tr>
+                        <td>Бобровская Анастасия</td>
+                        <td>000001</td>
+                        <td>Evarayqq</td>
+                        <td>Женский</td>
+                        <td>8 988 888 88 88</td>
+                        <td>VirtualStudio</td>
+                        <td>Божество</td>
+                        <td>100</td>
+                        <td>VirtualStudio</td>
+                        <td><img src="src/images/bell.svg" alt="" /></td>
+                        <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                </table>
             </div>
-        </div>
-    </div>
 
-
-
-    {% set  _ = 'videos' %}
-    <div class="{{ _ }} section">
-        <h2 class="h2">Первые шаги</h2>
-        <div class="{{ _ }}__list custom-slick-dots" style="margin-bottom: 0">
-            <div class="{{ _ }}__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-            </div>
-            <div class="{{ _ }}__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-            </div>
-            <div class="{{ _ }}__item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pJZRe68hqk?si=AOSFqWRzEkqlgGjL"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-            </div>
 
         </div>
+
     </div>
 
-
-    {% set  _ = 'banner' %}
-    <div class="{{ _ }} section">
-        <div class="{{ _ }}__wrap">
-            <div class="{{ _ }}__content">
-                <h3 class="h3">CASHROOM Virtual - позволяет создать свою виртуальную студию</h3>
-                <span>а так же предоставляет CRM систему и обучение для оффлайн студий</span>
-                <div class="gap"></div>
-                <a href="#" class="btn btn--white">
-                    <img src="images/button-icon.svg" alt=""/>
-                    Нужна помощь</a>
-            </div>
-            <div class="{{ _ }}__img">
-                <img src="images/{{ _ }}/1.png" alt=""/>
-            </div>
-        </div>
-    </div>
 
 
 

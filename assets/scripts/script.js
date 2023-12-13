@@ -88,13 +88,17 @@ $(document).ready(function () {
         }
     }
 
-    new SlimSelect({
-        select: '.selectElement',
-        settings: {
-            showSearch: false
-        }
-    })
 
+    $('.selectElement').each(function () {
+        console.log('1')
+        new SlimSelect({
+            select: '.selectElement',
+            settings: {
+                showSearch: false
+            }
+        })
+    })
+    
 
 
     function academy_slider() {

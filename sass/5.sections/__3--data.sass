@@ -1,4 +1,25 @@
 .data
+  &__mobile-block
+
+    gap: 10px
+    justify-content: center
+    margin-bottom: 40px
+    display: none
+    @media screen and (max-width: 1439px)
+      display: flex
+
+
+
+
+  &__mobile-item
+    @extend %radius
+    height: 40px
+    @extend %fy
+    gap: 10px
+    color: $violet-text
+    background-color: $white
+    padding: 0 15px
+
   &__wrap
     display: grid
     grid-template-columns: 270px auto
@@ -33,9 +54,7 @@
     padding: 10px 20px
     @media screen and (max-width: 1439px)
       padding: 10px 15px
-    
-    	
-    
+
 
     span
       display: block
