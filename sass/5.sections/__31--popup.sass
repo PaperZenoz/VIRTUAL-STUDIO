@@ -5,6 +5,8 @@
   width: 100%
   padding: 40px 30px
   position: relative
+  p
+    font-size: 16px
 
   &--big
     max-width: 720px
@@ -174,4 +176,14 @@
     overflow-y: scroll
     @extend %scrollbar
     padding: 15px
+
+  &__two-columns
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 15px
+    @media screen and (max-width: 1439px)
+      grid-template-columns: 1fr
+    
+    	
+    
 
