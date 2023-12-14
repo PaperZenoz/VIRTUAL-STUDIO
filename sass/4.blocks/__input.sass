@@ -9,11 +9,28 @@
   background-color: $gray
   font-family: 'Geometria', sans-serif
 
+  &:focus
+    border: 1px solid $violet
+
   &.error
-    border: 1px solid #e20020
+
 
   @media screen and (max-width: 1439px)
     font-size: 16px
+
+.input-error
+  position: relative
+  &:before
+    content: 'Введите текст'
+    color: #e20020
+    position: absolute
+    right: 40px
+    top: 17px
+    font-size: 14px
+
+  .input
+    border: 1px solid #e20020
+
 
 
 

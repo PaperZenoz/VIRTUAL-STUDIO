@@ -293,7 +293,7 @@
     </div>
 
     
-    <div id="model-registration" class="popup" style="display: block">
+    <form action="#" id="model-registration" class="popup" style="display: block">
         <h3 class="h3">Регистрация для моделей</h3>
         <input type="text" class="input" placeholder="ФИО">
         <div class="checkselect" data-placeholder="Пол">
@@ -304,7 +304,10 @@
             <label><input type="checkbox" name="brands[]" value="5"><span></span> Amazon</label>
             <label><input type="checkbox" name="brands[]" value="6"><span></span> Verizon</label>
         </div>
-        <input type="text" class="input" placeholder="Дата рождения">
+        <div class="input-error">
+            <input type="text" class="input" placeholder="Дата рождения">
+        </div>
+
         <input type="text" class="input js--tel" placeholder="Телефон">
         <input type="text" class="input" placeholder="E-mail">
 
@@ -315,14 +318,14 @@
             <input type="text" class="input" placeholder="Повторите пароль">
         </div>
 
-        <div class="btn btn--dark-violet">Зарегистрироваться</div>
+        <button class="btn" disabled>Зарегистрироваться</button>
         <div class="gap"></div>
         <div class="popup__ancors">
             <a href="#">Войти</a>
             <a href="#">Добавить код студии</a>
         </div>
 
-    </div>
+    </form>
     <div id="congratulations" class="popup" style="display: none">
         <div class="popup__text-center">
             <h3 class="h3">Поздравляем с регистрацией</h3>

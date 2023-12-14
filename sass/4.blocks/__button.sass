@@ -14,6 +14,12 @@
   background-color: $violet
   @extend %500
   gap: 10px
+  @extend %transition
+  &:hover
+      background-color: #9065B4
+  &[disabled]
+    background-color: $dark-gray
+    color: $gray
   @media screen and (max-width: 1439px)
     width: 100%
     text-align: center
@@ -22,6 +28,9 @@
   &--gray
     background-color: $gray
     color: $violet
+    &:hover
+      background-color: $violet
+      color: $white
 
   &--dark-gray
     background-color: rgba(255, 255, 255, 0.30)
