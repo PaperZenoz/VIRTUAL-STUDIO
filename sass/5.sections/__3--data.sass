@@ -9,8 +9,6 @@
       display: flex
 
 
-
-
   &__mobile-item
     @extend %radius
     height: 40px
@@ -42,6 +40,9 @@
       width: 120px
       height: 120px
       margin: 0 auto
+    &:hover
+      .data__buttons
+        display: flex
 
   &__list
     display: flex
@@ -67,3 +68,11 @@
   &__block
     margin-bottom: 30px
     @extend %lc
+
+  &__buttons
+    position: absolute
+
+    gap: 5px
+    bottom: 5px
+    right: 10px
+    display: none
