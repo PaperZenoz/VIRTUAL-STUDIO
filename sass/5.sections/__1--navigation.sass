@@ -20,15 +20,17 @@
     @extend %radius
     border-left: 1px solid transparent
     @extend %transition
+    color: $violet-text
 
     &.active, &:hover
       background-color: $gray
       border-left: 1px solid $violet
+      color: $black
       path
-        fill: $violet
+        fill: $black
 
       rect
-        fill: $violet
+        fill: $black
 
   &__logo
     margin-bottom: 60px
